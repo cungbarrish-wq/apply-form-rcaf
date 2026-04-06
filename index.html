@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  	<link rel="icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhKXWypTx4yIkQkdqi0pbtf6ZR7G2Eh1NIbAMVma-w8Cey2n3mLjMDu9Xaj4nDnY0AGp_ouROfE3eFwovyxJlDOK-UgKdcgxFpuTLjWyzxCOlPqGc51VPbhgEJdtRlOeeB9XvwyZvP5HKhOIMVeR4Lvbdwh5mHbRZGt_1oAQEcWI_rPnq-iacRa1VMwDKA" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blogger.googleusercontent.com/img/a/AVvXsEhKXWypTx4yIkQkdqi0pbtf6ZR7G2Eh1NIbAMVma-w8Cey2n3mLjMDu9Xaj4nDnY0AGp_ouROfE3eFwovyxJlDOK-UgKdcgxFpuTLjWyzxCOlPqGc51VPbhgEJdtRlOeeB9XvwyZvP5HKhOIMVeR4Lvbdwh5mHbRZGt_1oAQEcWI_rPnq-iacRa1VMwDKA">
+   <meta property="og:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEg0OeXT_xLyKhnDP8yLRj8WaiBNj4P0RUT1dG_aWClX7RNGXgezBt05KFPKtP_R_1_F28yeLCBu7eli2Mmoghg5s9SAWwTFS0zW7YrB29xvh-skzchTxOSbyB2ZRRJRFyMZdvPrRon1DygzCWR2AGROjvZpYjjy5wTUbHGRXWxNpW_RNeTm2ImGDaXkOKg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ពាក្យសុំចូល សមាជិកភាព និង លិខិតបណ្តាំ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Moul&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Khmer OS Battambang', 'Battambang', sans-serif;
+            background-color: #f4f4f4;
+            color: #000;
+            line-height: 1.65; 
+            font-size: 14px;
+            padding-top: 1.0cm;
+        }
+        /* Page Container */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            box-sizing: border-box;
+            page-break-after: always; 
+            break-after: page;
+        }
+        .moul-font {
+            font-family: 'Khmer OS Muol Light', 'Khmer OS Muol', 'Moul', cursive;
+        }
+        .text-center { text-align: center; }
+        .header-section {
+            text-align: center;
+            margin-top: -40px; 
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .photo-box {
+            position: absolute; top: 18mm; right: 20mm; width: 23mm; height: 28mm;
+            border: 1px solid #3f485245; display: flex; align-items: center;
+            justify-content: center; text-align: center; color: #888888;
+        }
+        .form-title { text-align: center; margin-top: 20px; margin-bottom: 20px; line-height: 1.8; }
+        .input-group {
+            display: flex; align-items: baseline; flex-wrap: wrap; margin-bottom: -9px;
+        }
+        .input-dotted {
+            border: none; background-image: linear-gradient(to right, #b3b3b3 50%, transparent 50%);
+            background-size: 4px 2px; background-position: bottom 12px left 0; background-repeat: repeat-x;
+            background-color: transparent; font-family: inherit; font-size: 14px; color: #000;
+            padding: 4px 5px 6px 5px; line-height: normal; outline: none; flex-grow: 1; text-align: center;
+            -webkit-print-color-adjust: exact; print-color-adjust: exact;
+        }
+        .w-auto { flex-grow: 1; }
+        .w-small { width: 100px; flex-grow: 0; }
+        .w-medium { width: 110px; flex-grow: 0; }
+        .w-my { width: 20px; flex-grow: 0; }
+        .salutation { text-align: center; margin-top: 15px; margin-bottom: 15px; line-height: 1.6; }
+        .attachments { margin-top: 10px; padding-left: 20px; }
+        .attachment-row { display: flex; align-items: baseline; margin-bottom: 0px; }
+        .dot-leader { flex-grow: 1; border-bottom: 2px dotted #000; margin: 0 8px; position: relative; top: 0px; }
+        .footer-dates { margin-top: 20px; display: flex; justify-content: flex-end; text-align: center; }
+        .signature-box { width: 300px; }
+        .signature-row { display: flex; justify-content: center; align-items: baseline; white-space: nowrap; margin-bottom: -8px; }
+        .auto-width-input {
+            border: none; background-image: linear-gradient(to right, #b3b3b3 50%, transparent 50%);
+            background-size: 4px 2px; background-position: bottom 12px left 0; background-repeat: repeat-x;
+            background-color: transparent; font-family: inherit; font-size: 14px; color: #000;
+            padding: 4px 2px 6px 2px; line-height: normal; outline: none; text-align: center;
+            -webkit-print-color-adjust: exact; print-color-adjust: exact;
+        }
+        
+        /* Control Buttons & Menu Bar */
+        .top-menu-bar {
+            position: fixed; top: 0; left: 0; width: 100%; height: 0.9cm; background-color: #1e1d1d;
+            z-index: 1000; display: flex; align-items: center; padding: 0 10px; 
+            box-sizing: border-box; box-shadow: 0 2px 5px rgba(0,0,0,0.5); overflow-x: auto;
+        }
+        .top-menu-bar::-webkit-scrollbar { display: none; }
+        .hamburger-btn {
+            background: transparent; border: none; font-size: 20px; color: white; cursor: pointer;
+            padding: 0 10px 0 0; margin: 0; height: 100%; display: flex; align-items: center;
+        }
+        .home-btn {
+            text-decoration: none; padding: 0 12px; background-color: #709141; color: white;
+            border-radius: 4px; font-size: 13px; height: 0.7cm; display: flex; align-items: center;
+            font-family: 'Khmer OS Battambang', 'Battambang', sans-serif; flex-shrink: 0; margin-right: 8px;
+        }
+        .controls-group { display: flex; gap: 8px; align-items: center; height: 100%; flex-wrap: nowrap; }
+        button {
+            font-family: 'Khmer OS Battambang', 'Battambang', sans-serif; padding: 0 12px; margin: 0;
+            cursor: pointer; border: none; border-radius: 4px; background-color: #007bff; color: white;
+            font-size: 13px; height: 0.7cm; display: flex; align-items: center; flex-shrink: 0;
+        }
+        button.transfer-btn { background-color: #8e44ad; }
+        button.receive-btn { background-color: #d35400; }
+        button.save-btn { background-color: #28a745; }
+        button.clear-btn { background-color: #dc3545; }
+        button.telegram-btn { background-color: #0088cc; } 
+        
+        /* Modals & Sidebar Styles */
+        .modal-overlay {
+            display: none; position: fixed; top:0; left:0; width:100%; height:100%;
+            background: rgba(0,0,0,0.6); z-index: 2000;
+        }
+        .modal-content {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            background: #fff; padding: 25px; border-radius: 8px; min-width: 320px; max-width:90%;
+            text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .modal-input {
+            width: 100%; padding: 10px; margin: 15px 0; border: 1px solid #ccc; border-radius: 4px;
+            font-family: inherit; font-size: 15px; box-sizing: border-box; outline: none;
+        }
+        .close-btn { position: absolute; right: 15px; top: 10px; cursor: pointer; font-size: 24px; color:#555; }
+        
+        .sidebar {
+            position: fixed; left: -320px; top: 0; width: 300px; height: 100%; background: #fff;
+            z-index: 2001; transition: left 0.3s ease; box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+            padding: 20px; box-sizing: border-box; overflow-y: auto;
+        }
+        .sidebar-overlay {
+            display: none; position: fixed; top:0; left:0; width:100%; height:100%;
+            background: rgba(0,0,0,0.4); z-index: 2000;
+        }
+        .list-item {
+            padding: 12px; border-bottom: 1px solid #eee; font-size: 14px; display:flex; flex-direction:column;
+            text-align: left; background:#f9f9f9; margin-bottom:5px; border-radius:4px;
+        }
+        
+        @media print {
+            @page { size: A4; margin: 0; }
+            body { background: white; margin: 0; padding: 0 !important; }
+            #navbar-iframe, #Navbar1, .navbar, header, footer, #header-wrapper, .top-menu-bar, .no-print, .sidebar, .sidebar-overlay, .modal-overlay {
+                display: none !important;
+            }
+            .page { 
+                position: relative; border: none; box-shadow: none; margin: 0; padding: 15mm 20mm; width: 100%; 
+                min-height: 297mm; page-break-after: always; break-after: page;
+            }
+            .input-dotted, .auto-width-input { border-bottom: none; }
+            .dot-leader { border-bottom: 2px dotted #000 !important; }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Sidebar Menu ≡ -->
+    <div id="sidebarOverlay" class="sidebar-overlay" onclick="window.toggleSidebar()"></div>
+    <div id="sidebar" class="sidebar no-print">
+        <h3 class="moul-font" style="margin-top:0; border-bottom:2px solid #007bff; padding-bottom:10px; color:#007bff;">បញ្ជីទិន្នន័យទទួលបាន</h3>
+        <p style="font-size: 12px; color: #666; margin-bottom:15px;">ឈ្មោះខាងក្រោមនេះ គឺជាទិន្នន័យដែលអ្នកទទួលបានពី Device ផ្សេង។</p>
+        <div id="receivedListContainer"></div>
+    </div>
+
+    <!-- Top Menu Bar -->
+    <div class="top-menu-bar no-print">
+        <button class="hamburger-btn" onclick="window.toggleSidebar()">≡</button>
+        <a href="https://apply-form-01.blogspot.com/" class="home-btn">Home 🏡</a>
+        <div class="controls-group">
+            <button class="transfer-btn" onclick="window.openTransferModal()">ផ្ទេរ (Send)</button>
+            <button class="receive-btn" onclick="window.openReceiveModal()">ទទួល (Recv)</button>
+            <button class="save-btn" onclick="saveData()">Save 🗂</button>
+            <button onclick="window.print()">Print/PDF</button>
+            <button class="telegram-btn" onclick="shareToTelegram()">Telegram ✈️</button>
+            <button class="clear-btn" onclick="clearData()">Clear</button>
+        </div>
+    </div>
+
+    <!-- Transfer Modal -->
+    <div id="transferModal" class="modal-overlay no-print">
+        <div class="modal-content">
+            <span class="close-btn" onclick="window.closeModals()">&times;</span>
+            <h3 class="moul-font" style="color:#8e44ad; margin-top:10px;">ផ្ទេរទិន្នន័យ (Transfer)</h3>
+            <p style="font-size:13px; color:#555;">សូមបំពេញឈ្មោះរបស់អ្នក (សម្រាប់ឲ្យអ្នកទទួលចំណាំ)៖</p>
+            <input type="text" id="transferSenderName" class="modal-input" placeholder="វាយឈ្មោះនៅទីនេះ...">
+            <button onclick="window.generateAndSend()" style="background:#8e44ad; width:100%; height:auto; padding:12px; font-size:15px; justify-content:center;">បង្កើតកូដផ្ញើទិន្នន័យ</button>
+            <div id="transferCodeDisplay" style="display:none; margin-top:20px; background:#f0f4f8; padding:15px; border-radius:5px; border:1px dashed #0088cc;">
+                <p style="margin:0; font-weight:bold;">លេខកូដសម្ងាត់របស់អ្នកគឺ៖</p>
+                <h1 style="margin:10px 0; color:#d35400; letter-spacing: 5px; font-size:32px;" id="theCode"></h1>
+                <p style="margin:0; font-size:12px; color:#666;">សូមប្រាប់លេខកូដនេះទៅកាន់អ្នកទទួល។</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receive Modal -->
+    <div id="receiveModal" class="modal-overlay no-print">
+        <div class="modal-content">
+            <span class="close-btn" onclick="window.closeModals()">&times;</span>
+            <h3 class="moul-font" style="color:#d35400; margin-top:10px;">ទទួលទិន្នន័យ (Receive)</h3>
+            <p style="font-size:13px; color:#555;">សូមបញ្ចូលលេខកូដសម្ងាត់ ៦ខ្ទង់៖</p>
+            <input type="text" id="receiveCodeInput" class="modal-input" placeholder="ឧ. 123456" maxlength="6" style="text-align:center; font-size:20px; letter-spacing:4px; font-weight:bold;">
+            <button onclick="window.checkReceiveCode()" style="background:#d35400; width:100%; height:auto; padding:12px; font-size:15px; justify-content:center;">ស្វែងរកទិន្នន័យ</button>
+            
+            <div id="receiveConfirmSection" style="display:none; margin-top:20px; border-top:1px solid #eee; padding-top:15px;">
+                <p style="margin-bottom:15px;">មានទិន្នន័យផ្ញើមកពី៖ <br><b id="senderNameDisplay" style="color:#28a745; font-size:20px; display:block; margin-top:5px;"></b></p>
+                <div style="display:flex; gap:10px; justify-content:center;">
+                    <button onclick="window.acceptTransfer()" style="background:#28a745; flex:1; height:auto; padding:12px; justify-content:center;">ទទួលយល់ព្រម</button>
+                    <button onclick="window.rejectTransfer()" style="background:#dc3545; flex:1; height:auto; padding:12px; justify-content:center;">បដិសេធន៍</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ទំព័រទី១ ៖ ពាក្យសុំចូលសមាជិកភាព ==================== -->
+    <div class="page">
+        <div class="header-section moul-font">
+            <span style="font-size: 16px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
+            <span style="font-size: 14px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEizcxq3b-xmvlpSr24nEHaiRSPcJ1xoba2QqqIUc-Imqb3B2AurC7Z1NCKOUFncDClGyZ3uaZyA5hGWst3HpivzVCs2vcTsjAYR5M7zV3ht-AI0tq__RADXBXikVnmwrfpZJd_M9GBC_u1zyclVrJPqehcPBW_9eNuX_SztVJH3a3i6gGKMRa_ob-qe9zI=s16000" alt="kbach" style="height: 25px; margin-top: 0px;">
+        </div>
+
+        <div class="photo-box">រូបថត<br>៤x៦</div>
+
+        <div class="form-title moul-font">
+            ពាក្យសុំចូល<br>
+            សមាជិកភាព វិភាគទានយោធិនមរណភាព<br>
+            ក្រសួងការពារជាតិ (វ.យ.ម.ក)<br>
+            <div style="width: 100px; height: 1px; background-color: #000; margin: 10px auto; position: relative;">
+                <div style="width: 5px; height: 5px; background-color: #000; transform: rotate(45deg); position: absolute; top: -2px; left: 50%; margin-left: -2.5px;"></div>
+            </div>
+        </div>
+
+        <div class="input-group">
+          <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="name" class="input-dotted w-auto">
+            ភេទ <input type="text" id="gender" class="input-dotted w-small">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="dob" class="input-dotted w-medium">
+        </div>
+        <div class="input-group">
+            អត្តលេខ <input type="text" id="idNum" class="input-dotted w-small">
+            ឋានន្តរសក្តិ <input type="text" id="rank" class="input-dotted w-small">
+            មុខតំណែង <input type="text" id="position" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            កងឯកភាព <input type="text" id="unit" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            ទីកន្លែងកំណើតៈ ស្រុក/ខណ្ឌ <input type="text" id="pob_district" class="input-dotted w-auto">
+            ខេត្ត/ក្រុង <input type="text" id="pob_province" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            អាស័យដ្ឋានបច្ចុប្បន្នៈ ផ្ទះលេខ <input type="text" id="curr_house" class="input-dotted w-my">
+            ផ្លូវ <input type="text" id="curr_st" class="input-dotted w-small">
+            ភូមិ <input type="text" id="curr_village" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            ឃុំ/សង្កាត់ <input type="text" id="curr_commune" class="input-dotted w-auto">
+            ខេត្ត/ក្រុង <input type="text" id="curr_province" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            លេខអត្តសញ្ញាណប័ណ្ណ ខភម <input type="text" id="military_id" class="input-dotted w-auto">
+            លេខទូរស័ព្ទ <input type="text" id="phone" class="input-dotted w-auto">
+        </div>
+
+        <div class="salutation moul-font">
+            សូមគោរពជូន<br>
+            ឯកឧត្តម នាយឧត្តមសេនីយ៍ អគ្គនាយក អគ្គនាយកដ្ឋានយោធសេវា<br>
+            និងជា ប្រធានគណៈកម្មការវិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ
+        </div>
+
+        <div style="text-indent: 50px; text-align: justify;">
+            មេត្តាអនុញ្ញាតចុះឈ្មោះខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="repeat_name" class="input-dotted" style="width: 200px;"> ចូលជាសមាជិកភាព
+            វិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ ដោយក្តីអនុគ្រោះ។
+        </div>
+
+        <div class="moul-font" style="margin-top: 20px; text-decoration: underline;">សូមភ្ជាប់មកជាមួយនូវ ៖</div>
+        
+        <div class="attachments">
+            <div class="attachment-row"><span>១- អត្តសញ្ញាណប័ណ្ណ ខភម និងអត្តសញ្ញាណប័ណ្ណសញ្ជាតិខ្មែរ</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
+            <div class="attachment-row"><span>២- សៀវភៅគ្រួសារ ឬ សៀវភៅស្នាក់នៅ</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
+            <div class="attachment-row"><span>៣- រូបថត ខភម ( ៤ x ៦ )</span><span class="dot-leader"></span><span>០៨សន្លឹក</span></div>
+            <div class="attachment-row"><span>៤- លិខិតបណ្តាំ វ.យ.ម.ក</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
+            <div class="attachment-row"><span>៥- អត្តសញ្ញាណប័ណ្ណ អ្នកទទួលអត្ថប្រយោជន៍ វ.យ.ម.ក</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
+        </div>
+
+        <div class="footer-dates">
+            <div class="signature-box" style="width: auto; min-width: 350px;">
+                <div class="signature-row">
+                    ថ្ងៃ <input type="text" id="d_day1" class="auto-width-input" data-min="25" style="width: 25px;">
+                    ខែ <input type="text" id="d_month1" class="auto-width-input" data-min="40" style="width: 40px;">
+                    ឆ្នាំ <input type="text" id="d_year_zodiac" class="auto-width-input" data-min="40" style="width: 40px;">
+                    ស័ក ព.ស ២៥ <input type="text" id="d_buddhist_year" class="auto-width-input" data-min="25" style="width: 25px;">
+                </div>
+                <div class="signature-row">
+                    ធ្វើនៅ <input type="text" id="d_place" class="auto-width-input" data-min="60" style="width: 60px;">
+                    ថ្ងៃទី <input type="text" id="d_day2" class="auto-width-input" data-min="25" style="width: 25px;">
+                    ខែ <input type="text" id="d_month2" class="auto-width-input" data-min="40" style="width: 40px;">
+                    ឆ្នាំ២០<input type="text" id="d_year2" class="auto-width-input" data-min="25" style="width: 25px;">
+                </div>
+                <div class="moul-font" style="margin-top: 10px; font-weight: bold;">ស្នាមមេដៃសាមីខ្លួន</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== ទំព័រទី២ ៖ លិខិតបណ្តាំ ==================== -->
+    <div class="page">
+        <div class="header-section moul-font">
+            <span style="font-size: 16px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
+            <span style="font-size: 14px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEizcxq3b-xmvlpSr24nEHaiRSPcJ1xoba2QqqIUc-Imqb3B2AurC7Z1NCKOUFncDClGyZ3uaZyA5hGWst3HpivzVCs2vcTsjAYR5M7zV3ht-AI0tq__RADXBXikVnmwrfpZJd_M9GBC_u1zyclVrJPqehcPBW_9eNuX_SztVJH3a3i6gGKMRa_ob-qe9zI=s16000" alt="kbach" style="height: 25px; margin-top: 0px;">
+        </div>
+
+        <div class="photo-box">រូបថត<br>៤x៦</div>
+
+        <div class="form-title moul-font">
+            លិខិតបណ្តាំ<br>
+            វ.យ.ម.ក<br>
+            <div style="width: 100px; height: 1px; background-color: #000; margin: 10px auto; position: relative;">
+                <div style="width: 5px; height: 5px; background-color: #000; transform: rotate(45deg); position: absolute; top: -2px; left: 50%; margin-left: -2.5px;"></div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 15px; text-align: justify;">
+            <div style="display: flex;">
+                <div style="width: 45px; font-weight: bold;">យោង៖</div>
+                <div style="flex-grow: 1;">
+                    - សេចក្តីកំណត់លេខ ០០៣/២០២៥ ស.ក.ណ ចុះថ្ងៃទី២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីវិភាគទាន យោធិនមរណភាពក្រសួងការពារជាតិ។<br>
+                    - សេចក្តីសម្រេចលេខ ០៦៦ សសរ.កពជ ចុះថ្ងៃទី ២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីការបង្កើតគណៈកម្មការវិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group">
+          <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="p2_name" class="input-dotted w-auto">
+            ភេទ <input type="text" id="p2_gender" class="input-dotted w-small">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_dob" class="input-dotted w-medium">
+        </div>
+        <div class="input-group">
+            អត្តលេខ <input type="text" id="p2_idNum" class="input-dotted w-small">
+            ឋានន្តរសក្តិ <input type="text" id="p2_rank" class="input-dotted w-small">
+            មុខតំណែង <input type="text" id="p2_position" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">កងឯកភាព <input type="text" id="p2_unit" class="input-dotted w-auto"></div>
+
+        <div class="moul-font" style="text-align: center; margin: 15px 0 10px 0;">សូមប្រគល់សិទ្ធិក្នុងការទទួលអត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាព</div>
+
+        <div class="input-group">
+            ជូនទៅឈ្មោះ <input type="text" id="p2_ass_name" class="input-dotted w-auto">
+            ភេទ <input type="text" id="p2_ass_gender" class="input-dotted w-small">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_ass_dob" class="input-dotted w-medium">
+        </div>
+        <div class="input-group">
+            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_ass_id" class="input-dotted w-medium">
+            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_ass_house" class="input-dotted w-my">
+            ផ្លូវ <input type="text" id="p2_ass_st" class="input-dotted w-my">
+            ភូមិ <input type="text" id="p2_ass_village" class="input-dotted w-small">
+        </div>
+        <div class="input-group">
+            <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            ឃុំ/សង្កាត់ <input type="text" id="p2_ass_commune" class="input-dotted w-small">
+            ស្រុក/ខណ្ឌ <input type="text" id="p2_ass_district" class="input-dotted w-auto">
+            ខេត្ត/ក្រុង <input type="text" id="p2_ass_prov" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            លេខទូរស័ព្ទ <input type="text" id="p2_ass_phone" class="input-dotted w-auto">
+            ត្រូវជា <input type="text" id="p2_ass_rel" class="input-dotted w-small">
+        </div>
+        <div style="text-align: justify;">
+            ជាអ្នកទទួលសិទ្ធិបើកប្រាក់អត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ ដោយអនុលោមតាមសេចក្តីកំណត់ចុងក្រោយស្តីពីវិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ។
+        </div>
+
+        <div class="input-group" style="margin-top: 10px;">
+            ក្នុងករណីឈ្មោះ <input type="text" id="p2_missing_name" class="input-dotted w-medium"> អវត្តមាន សូមផ្តល់សិទ្ធិជូនទៅ៖
+        </div>
+        <div class="input-group">
+            - ឈ្មោះ <input type="text" id="p2_sub1_name" class="input-dotted w-auto">
+            ភេទ <input type="text" id="p2_sub1_gender" class="input-dotted w-small">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub1_dob" class="input-dotted w-medium">
+        </div>
+        <div class="input-group">
+            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub1_id" class="input-dotted w-medium">
+            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_sub1_house" class="input-dotted w-my">
+            ផ្លូវ <input type="text" id="p2_sub1_st" class="input-dotted w-my">
+            ភូមិ <input type="text" id="p2_sub1_village" class="input-dotted w-small">
+        </div>
+        <div class="input-group">
+            <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            ឃុំ/សង្កាត់ <input type="text" id="p2_sub1_commune" class="input-dotted w-small">
+            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub1_district" class="input-dotted w-auto">
+            ខេត្ត/ក្រុង <input type="text" id="p2_sub1_prov" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            លេខទូរស័ព្ទ <input type="text" id="p2_sub1_phone" class="input-dotted w-auto">
+            ត្រូវជា <input type="text" id="p2_sub1_rel" class="input-dotted w-auto">
+        </div>
+
+        <div class="input-group">
+            - ឬឈ្មោះ <input type="text" id="p2_sub2_name" class="input-dotted w-auto">
+            ភេទ <input type="text" id="p2_sub2_gender" class="input-dotted w-small">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub2_dob" class="input-dotted w-medium">
+        </div>
+        <div class="input-group">
+            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub2_id" class="input-dotted w-medium">
+            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_sub2_house" class="input-dotted w-my">
+            ផ្លូវ <input type="text" id="p2_sub2_st" class="input-dotted w-my">
+            ភូមិ <input type="text" id="p2_sub2_village" class="input-dotted w-small">
+        </div>
+        <div class="input-group">
+            <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            ឃុំ/សង្កាត់ <input type="text" id="p2_sub2_commune" class="input-dotted w-small">
+            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub2_district" class="input-dotted w-auto">
+            ខេត្ត/ក្រុង <input type="text" id="p2_sub2_prov" class="input-dotted w-auto">
+        </div>
+        <div class="input-group">
+            លេខទូរស័ព្ទ <input type="text" id="p2_sub2_phone" class="input-dotted w-auto">
+            ត្រូវជា <input type="text" id="p2_sub2_rel" class="input-dotted w-auto">
+        </div>
+
+        <div style="text-align: justify; margin-top: 5px;">
+            លិខិតបណ្តាំនេះធ្វើឡើងដោយឆន្ទៈពិតប្រាកដដោយមិនមានការបង្ខិតបង្ខំធ្វើឡើងចំនួន០៣ច្បាប់ មានតម្លៃគតិយុត្តិស្មើៗគ្នា០១ច្បាប់តម្កល់នៅលេខាធិការដ្ឋាន(វ.យ.ម.ក)និង០១ច្បាប់ តម្កល់នៅក្រុមការងារសាមីអង្គភាពរៀងៗខ្លួន និង០១ច្បាប់ទៀត ផ្តល់ជូនសាមីខ្លួន។
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-top: 10px; text-align: center;">
+            <div style="width: 32%;">
+                <div class="signature-row" style="justify-content: flex-start; margin-top:-10px;">
+                    លេខ <input type="text" id="p2_cmd_num" class="auto-width-input" data-min="60" style="width: 60px;">
+                </div>
+                <div class="signature-row" style="margin-top: 5px; justify-content: flex-start;">
+                    ថ្ងៃទី <input type="text" id="p2_cmd_day" class="auto-width-input" data-min="25" style="width: 25px;">
+                    ខែ <input type="text" id="p2_cmd_month" class="auto-width-input" data-min="25" style="width: 25px;">
+                    ឆ្នាំ <input type="text" id="p2_cmd_year" class="auto-width-input" data-min="25" style="width: 25px;">
+                </div>
+                <div style="margin-top: 5px; font-weight: bold;">បានឃើញនិងឯកភាព</div><br>
+                <div class="moul-font" style="margin-top: -20px; font-weight: bold;">មេបញ្ជាការ</div>
+            </div>
+
+            <div style="width: 30%;">
+                <div class="moul-font" style="margin-top: 55px; font-weight: bold;">ក្រុមការងារ (វយមក)<br>កងឯកភាព</div>
+            </div>
+
+            <div style="width: 38%;">
+                <div class="signature-row" style="justify-content: flex-end; margin-top:-14px;">
+                    ថ្ងៃ <input type="text" id="p2_d_day1" class="auto-width-input" data-min="20" style="width: 20px;">
+                    ខែ <input type="text" id="p2_d_month1" class="auto-width-input" data-min="30" style="width: 30px;">
+                    ឆ្នាំ <input type="text" id="p2_d_year_zodiac" class="auto-width-input" data-min="30" style="width: 30px;">
+                    ស័ក ព.ស ២៥ <input type="text" id="p2_d_buddhist_year" class="auto-width-input" data-min="20" style="width: 20px;">
+                </div>
+                <div class="signature-row" style="justify-content: flex-end;">
+                    ធ្វើនៅ <input type="text" id="p2_d_place" class="auto-width-input" data-min="40" style="width: 40px;">
+                    ថ្ងៃទី <input type="text" id="p2_d_day2" class="auto-width-input" data-min="20" style="width: 20px;">
+                    ខែ <input type="text" id="p2_d_month2" class="auto-width-input" data-min="30" style="width: 30px;">
+                    ឆ្នាំ២០<input type="text" id="p2_d_year2" class="auto-width-input" data-min="20" style="width: 20px;">
+                </div>
+                <div class="moul-font" style="margin-top: 10px; font-weight: bold;">អ្នកប្រគល់សិទ្ធិ<br>ស្នាមមេដៃ</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Standard Scripts -->
+    <script>
+        // Global variables for UI functions
+        window.adjustWidth = function(input) {
+            let span = document.getElementById('measure-span');
+            if (!span) {
+                span = document.createElement('span');
+                span.id = 'measure-span';
+                span.style.cssText = 'position:absolute; visibility:hidden; white-space:pre; font-family:"Khmer OS Battambang", "Battambang", sans-serif; font-size:14px;';
+                document.body.appendChild(span);
+            }
+            span.textContent = input.value || '';
+            const minW = parseInt(input.getAttribute('data-min')) || 25;
+            input.style.width = Math.max(span.offsetWidth + 6, minW) + 'px';
+        }
+
+        window.onload = function() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            inputs.forEach(input => {
+                if(!input.classList.contains('modal-input')) {
+                    const savedValue = localStorage.getItem(input.id);
+                    if (savedValue) input.value = savedValue;
+                    if (input.classList.contains('auto-width-input')) {
+                        input.addEventListener('input', function() { window.adjustWidth(this); });
+                        window.adjustWidth(input);
+                    }
+                }
+            });
+            window.renderSidebarList();
+        };
+
+        window.saveData = function() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            inputs.forEach(input => {
+                if(!input.classList.contains('modal-input') && input.id) {
+                    localStorage.setItem(input.id, input.value);
+                }
+            });
+            alert('ទិន្នន័យត្រូវបានរក្សាទុកក្នុង Browser រួចរាល់!');
+        }
+
+        window.clearData = function() {
+            if(confirm('តើអ្នកពិតជាចង់លុបទិន្នន័យទាំងអស់មែនទេ?')) {
+                const inputs = document.querySelectorAll('input[type="text"]');
+                inputs.forEach(input => {
+                    if(!input.classList.contains('modal-input')) {
+                        input.value = '';
+                        localStorage.removeItem(input.id);
+                    }
+                });
+            }
+        }
+
+        window.shareToTelegram = function() {
+            const name = document.getElementById('name').value || '...';
+            const idNum = document.getElementById('idNum').value || '...';
+            const unit = document.getElementById('unit').value || '...';
+            const phone = document.getElementById('phone').value || '...';
+            const ass_name = document.getElementById('p2_ass_name').value || '...';
+            const ass_rel = document.getElementById('p2_ass_rel').value || '...';
+            const ass_phone = document.getElementById('p2_ass_phone').value || '...';
+
+            const message = `📄 *ព័ត៌មានសុំចូលសមាជិកភាព វ.យ.ម.ក*\n\n` +
+                            `👤 *សាមីខ្លួន*\n- ឈ្មោះ: ${name}\n- អត្តលេខ: ${idNum}\n- កងឯកភាព: ${unit}\n- លេខទូរស័ព្ទ: ${phone}\n\n` +
+                            `👥 *អ្នកទទួលសិទ្ធិទី១*\n- ឈ្មោះ: ${ass_name}\n- ត្រូវជា: ${ass_rel}\n- លេខទូរស័ព្ទ: ${ass_phone}`;
+            window.open(`https://t.me/share/url?url=&text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        /* UI Modal & Sidebar Functions */
+        window.openTransferModal = function() {
+            document.getElementById('transferModal').style.display = 'block';
+            document.getElementById('transferCodeDisplay').style.display = 'none';
+            document.getElementById('transferSenderName').value = '';
+        }
+        window.openReceiveModal = function() {
+            document.getElementById('receiveModal').style.display = 'block';
+            document.getElementById('receiveConfirmSection').style.display = 'none';
+            document.getElementById('receiveCodeInput').value = '';
+        }
+        window.closeModals = function() {
+            document.getElementById('transferModal').style.display = 'none';
+            document.getElementById('receiveModal').style.display = 'none';
+        }
+        window.toggleSidebar = function() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-320px';
+                overlay.style.display = 'none';
+            } else {
+                sidebar.style.left = '0px';
+                overlay.style.display = 'block';
+                window.renderSidebarList();
+            }
+        }
+        window.renderSidebarList = function() {
+            const container = document.getElementById('receivedListContainer');
+            const list = JSON.parse(localStorage.getItem('receivedList') || '[]');
+            if (list.length === 0) {
+                container.innerHTML = '<p style="color:#888; text-align:center;">មិនទាន់មានបញ្ជីឈ្មោះទេ</p>';
+                return;
+            }
+            container.innerHTML = list.map((item, i) => 
+                `<div class="list-item">
+                    <b>${i+1}. ឈ្មោះ: ${item.name}</b>
+                    <span style="font-size:12px; color:#555; margin-top:3px;">📅 ផ្ទេរមកនៅ៖ ${item.date}</span>
+                </div>`
+            ).join('');
+        }
+        
+        window.getFormData = function() {
+            const data = {};
+            document.querySelectorAll('input[type="text"]').forEach(input => {
+                if(!input.classList.contains('modal-input') && input.id) {
+                    data[input.id] = input.value;
+                }
+            });
+            return data;
+        }
+    </script>
+
+    <!-- Cloud Backend (Firestore Relay) Script -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, getDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        let db, auth, appId, currentUser, firebaseInitError = "";
+
+        // 👉 កូដ Firebase Config ដែលបានយកចេញពីរូបភាពរបស់អ្នក
+        const githubFirebaseConfig = {
+            apiKey: "AIzaSyC5w7iyaiTgtcBSQ7YB_d9m5fqFthrAMdw",
+            authDomain: "data-transfer-2dd69.firebaseapp.com",
+            projectId: "data-transfer-2dd69",
+            storageBucket: "data-transfer-2dd69.firebasestorage.app",
+            messagingSenderId: "899207383389",
+            appId: "1:899207383389:web:f5564fda60007ace3540b4"
+        };
+
+        async function initFirebase() {
+            try {
+                // ប្រើ Config របស់ប្រព័ន្ធ Canvas ប្រសិនបើមាន បើអត់ប្រើ Config ខាងលើសម្រាប់ GitHub
+                const firebaseConfig = (typeof __firebase_config !== 'undefined' && __firebase_config) ? JSON.parse(__firebase_config) : githubFirebaseConfig;
+                
+                if (!firebaseConfig || firebaseConfig.apiKey === "ជំនួស_API_KEY_នៅទីនេះ") { 
+                    firebaseInitError = "សូមបញ្ចូល Firebase Config ឲ្យបានត្រឹមត្រូវជាមុនសិន។";
+                    return; 
+                }
+                
+                appId = typeof __app_id !== 'undefined' ? __app_id : 'github-vymk-app';
+                const app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                onAuthStateChanged(auth, (user) => { currentUser = user; });
+            } catch (e) {
+                console.error("Firebase init error:", e);
+                firebaseInitError = e.message;
+            }
+        }
+        initFirebase();
+
+        window.generateAndSend = async function() {
+            if (firebaseInitError) {
+                return alert("❌ បរាជ័យក្នុងការភ្ជាប់ទៅ Firebase ៖\n" + firebaseInitError + "\n\n👉 សូមពិនិត្យមើល៖\n១. តើបានបើក Anonymous ក្នុង Authentication ទេ?\n២. តើបាន Add Domain (bondammorodok.blogspot.com) ចូលក្នុង Authorized domains ទេ?");
+            }
+            if (!currentUser) return alert("ប្រព័ន្ធកំពុងភ្ជាប់ទៅកាន់ Cloud... សូមរង់ចាំបន្តិច!");
+            
+            const sName = document.getElementById('transferSenderName').value;
+            if(!sName.trim()) return alert("សូមបំពេញឈ្មោះរបស់អ្នកសិន!");
+            
+            const btn = event.target;
+            btn.innerText = "កំពុងបង្កើត..."; btn.disabled = true;
+
+            // Generate 6 digit code
+            const code = Math.floor(100000 + Math.random() * 900000).toString();
+            const data = window.getFormData();
+            
+            try {
+                // Save to Cloud Relay
+                await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'transfers', code), {
+                    senderName: sName,
+                    formData: JSON.stringify(data),
+                    timestamp: new Date().getTime()
+                });
+                
+                document.getElementById('theCode').innerText = code;
+                document.getElementById('transferCodeDisplay').style.display = 'block';
+                btn.innerText = "បង្កើតកូដផ្ញើទិន្នន័យ"; btn.disabled = false;
+            } catch (e) {
+                alert("មានបញ្ហាក្នុងការផ្ទេរ: " + e.message);
+                btn.innerText = "បង្កើតកូដផ្ញើទិន្នន័យ"; btn.disabled = false;
+            }
+        }
+
+        window.checkReceiveCode = async function() {
+            if (firebaseInitError) {
+                return alert("❌ បរាជ័យក្នុងការភ្ជាប់ទៅ Firebase ៖\n" + firebaseInitError + "\n\n👉 សូមពិនិត្យមើល៖\n១. តើបានបើក Anonymous ក្នុង Authentication ទេ?\n២. តើបាន Add Domain (bondammorodok.blogspot.com) ចូលក្នុង Authorized domains ទេ?");
+            }
+            if (!currentUser) return alert("ប្រព័ន្ធកំពុងភ្ជាប់ទៅកាន់ Cloud... សូមរង់ចាំបន្តិច!");
+            
+            const code = document.getElementById('receiveCodeInput').value;
+            if(code.length !== 6) return alert("សូមបញ្ចូលលេខកូដសម្ងាត់ ៦ខ្ទង់ឲ្យបានត្រឹមត្រូវ!");
+            
+            const btn = event.target;
+            btn.innerText = "កំពុងស្វែងរក..."; btn.disabled = true;
+
+            try {
+                const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'transfers', code);
+                const docSnap = await getDoc(docRef);
+                
+                if(docSnap.exists()) {
+                    window.pendingTransfer = { docRef, data: docSnap.data(), code: code };
+                    document.getElementById('senderNameDisplay').innerText = window.pendingTransfer.data.senderName;
+                    document.getElementById('receiveConfirmSection').style.display = 'block';
+                } else {
+                    alert("លេខកូដមិនត្រឹមត្រូវ ឬអស់សុពលភាព (អាចត្រូវបានគេទាញយករួចហើយ)!");
+                }
+            } catch(e) {
+                alert("បញ្ហាប្រព័ន្ធ: " + e.message);
+            }
+            btn.innerText = "ស្វែងរកទិន្នន័យ"; btn.disabled = false;
+        }
+
+        window.acceptTransfer = async function() {
+            if(!window.pendingTransfer) return;
+            const payload = window.pendingTransfer.data;
+            const parsedData = JSON.parse(payload.formData);
+            
+            // ដាក់ទិន្នន័យចូលក្នុង Form វិញ
+            Object.keys(parsedData).forEach(key => {
+                const el = document.getElementById(key);
+                if(el && !el.classList.contains('modal-input')) {
+                    el.value = parsedData[key];
+                    if(el.classList.contains('auto-width-input')) window.adjustWidth(el);
+                }
+            });
+            
+            // រក្សាទុកក្នុង Local Storage
+            window.saveData(); 
+            
+            // បន្ថែមឈ្មោះចូលបញ្ជី Menu ≡
+            let list = JSON.parse(localStorage.getItem('receivedList') || '[]');
+            list.push({name: payload.senderName, date: new Date().toLocaleString('en-GB')});
+            localStorage.setItem('receivedList', JSON.stringify(list));
+            window.renderSidebarList();
+            
+            // លុបទិន្នន័យចេញពី Cloud (ដើម្បីកុំឲ្យខូចការសម្ងាត់)
+            await deleteDoc(window.pendingTransfer.docRef);
+            
+            window.closeModals();
+            alert("ទាញយកទិន្នន័យទទួលបានជោគជ័យ! បើកបញ្ជី (≡) ដើម្បីមើលឈ្មោះ។");
+        }
+
+        window.rejectTransfer = function() {
+            window.pendingTransfer = null;
+            document.getElementById('receiveConfirmSection').style.display = 'none';
+            document.getElementById('receiveCodeInput').value = '';
+            window.closeModals();
+        }
+    </script>
+
+</body>
+</html>
