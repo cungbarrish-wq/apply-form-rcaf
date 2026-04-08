@@ -67,6 +67,8 @@
       	.w-town { width: 90px; flex-grow: 0; }
       	.w-name { width: 180px; flex-grow: 0; }
       	.w-sex { width: 40px; flex-grow: 0; }
+		.w-db { width: 160px; flex-grow: 0; }
+      	.w-db2 { width: 150px; flex-grow: 0; }
         .salutation { text-align: center; margin-top: 15px; margin-bottom: 15px; line-height: 1.6; }
         .attachments { margin-top: 10px; padding-left: 20px; }
         .attachment-row { display: flex; align-items: baseline; margin-bottom: 0px; }
@@ -235,9 +237,9 @@
 
         <div class="input-group">
           <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
-            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="name" class="input-dotted w-auto">
-            ភេទ <input type="text" id="gender" class="input-dotted w-small">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="dob" class="input-dotted w-medium">
+            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="name" class="input-dotted w-name">
+            ភេទ <input type="text" id="gender" class="input-dotted w-sex">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="dob" class="input-dotted w-db">
         </div>
         <div class="input-group">
             អត្តលេខ <input type="text" id="idNum" class="input-dotted w-small">
@@ -302,7 +304,7 @@
                     ខែ <input type="text" id="d_month2" class="auto-width-input" data-min="40" style="width: 40px;">
                     ឆ្នាំ២០<input type="text" id="d_year2" class="auto-width-input" data-min="25" style="width: 25px;">
                 </div>
-                <div class="moul-font" style="margin-top: 10px; font-weight: bold;">ស្នាមមេដៃសាមីខ្លួន</div>
+              <div class="B" style="margin-top: 10px; "><B>ស្នាមមេដៃសាមីខ្លួន</B></div>
             </div>
         </div>
     </div>
@@ -337,9 +339,9 @@
 
         <div class="input-group">
           <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
-            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="p2_name" class="input-dotted w-auto">
-            ភេទ <input type="text" id="p2_gender" class="input-dotted w-small">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_dob" class="input-dotted w-medium">
+            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="p2_name" class="input-dotted w-name">
+            ភេទ <input type="text" id="p2_gender" class="input-dotted w-sex">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_dob" class="input-dotted w-db">
         </div>
         <div class="input-group">
             អត្តលេខ <input type="text" id="p2_idNum" class="input-dotted w-small">
@@ -350,10 +352,11 @@
 
         <div class="B" style="text-align: center; margin: 10px 0 10px 0;"><B>សូមប្រគល់សិទ្ធិក្នុងការទទួលអត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាព</B></div>
 
-        <div class="input-group"><div style="text-indent: 40px; text-align: justify;">
+        <div class="input-group">
+         <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
             ជូនទៅឈ្មោះ <input type="text" id="p2_ass_name" class="input-dotted w-name">
             ភេទ <input type="text" id="p2_ass_gender" class="input-dotted w-sex">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_ass_dob" class="input-dotted w-medium">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_ass_dob" class="input-dotted w-db2">
         </div>
         <div class="input-group">
             កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_ass_id" class="input-dotted w-medium">
@@ -370,9 +373,9 @@
         </div>
         <div class="input-group">
             លេខទូរស័ព្ទ <input type="text" id="p2_ass_phone" class="input-dotted w-medium">
-            ត្រូវជា <input type="text" id="p2_ass_rel" class="input-dotted w-small">
+            ត្រូវជា <input type="text" id="p2_ass_rel" class="input-dotted w-auto">
         </div>
-        <div style="text-align: justify;">
+        <div style="text-align: justify; margin-top:2px;">
             ជាអ្នក<B>ទទួលសិទ្ធិបើកប្រាក់អត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ</B><br> ដោយអនុលោមតាមសេចក្តីកំណត់ចុងក្រោយស្តីពីវិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ។
         </div>
 
@@ -382,7 +385,7 @@
         <div class="input-group">
             - ឈ្មោះ <input type="text" id="p2_sub1_name" class="input-dotted w-name">
             ភេទ <input type="text" id="p2_sub1_gender" class="input-dotted w-sex">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub1_dob" class="input-dotted w-medium">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub1_dob" class="input-dotted w-db">
         </div>
         <div class="input-group">
             កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub1_id" class="input-dotted w-medium">
@@ -402,9 +405,9 @@
         </div>
 
         <div class="input-group">
-            - ឬឈ្មោះ <input type="text" id="p2_sub2_name" class="input-dotted w-auto">
-            ភេទ <input type="text" id="p2_sub2_gender" class="input-dotted w-small">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub2_dob" class="input-dotted w-medium">
+            - ឬឈ្មោះ <input type="text" id="p2_sub2_name" class="input-dotted w-name">
+            ភេទ <input type="text" id="p2_sub2_gender" class="input-dotted w-sex">
+            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub2_dob" class="input-dotted w-db">
         </div>
         <div class="input-group">
             កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub2_id" class="input-dotted w-medium">
@@ -438,7 +441,7 @@
                     ឆ្នាំ <input type="text" id="p2_cmd_year" class="auto-width-input" data-min="25" style="width: 25px;">
                 </div>
                 <div style="margin-top: 5px; font-weight: bold;">បានឃើញនិងឯកភាព</div><br>
-                <div class="moul-font" style="margin-top: -20px; font-weight: bold;">មេបញ្ជាការ</div>
+                <div class="moul-font" style="margin-top: -20px; ">មេបញ្ជាការ</div>
             </div>
 
             <div style="width: 30%;">
