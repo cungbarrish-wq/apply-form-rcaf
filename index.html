@@ -1,857 +1,362 @@
 <!DOCTYPE html>
 <html lang="km">
 <head>
-  	<link rel="icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhKXWypTx4yIkQkdqi0pbtf6ZR7G2Eh1NIbAMVma-w8Cey2n3mLjMDu9Xaj4nDnY0AGp_ouROfE3eFwovyxJlDOK-UgKdcgxFpuTLjWyzxCOlPqGc51VPbhgEJdtRlOeeB9XvwyZvP5HKhOIMVeR4Lvbdwh5mHbRZGt_1oAQEcWI_rPnq-iacRa1VMwDKA" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://blogger.googleusercontent.com/img/a/AVvXsEhKXWypTx4yIkQkdqi0pbtf6ZR7G2Eh1NIbAMVma-w8Cey2n3mLjMDu9Xaj4nDnY0AGp_ouROfE3eFwovyxJlDOK-UgKdcgxFpuTLjWyzxCOlPqGc51VPbhgEJdtRlOeeB9XvwyZvP5HKhOIMVeR4Lvbdwh5mHbRZGt_1oAQEcWI_rPnq-iacRa1VMwDKA">
-   <meta property="og:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEg0OeXT_xLyKhnDP8yLRj8WaiBNj4P0RUT1dG_aWClX7RNGXgezBt05KFPKtP_R_1_F28yeLCBu7eli2Mmoghg5s9SAWwTFS0zW7YrB29xvh-skzchTxOSbyB2ZRRJRFyMZdvPrRon1DygzCWR2AGROjvZpYjjy5wTUbHGRXWxNpW_RNeTm2ImGDaXkOKg">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ពាក្យសុំចូល សមាជិកភាព និង លិខិតបណ្តាំ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Moul&display=swap" rel="stylesheet">
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>ទម្រង់សុំច្បាប់ឈប់សម្រាក - មន្ទីរពេទ្យគន្ធបុប្ផា</title>
+    
+    <!-- Favicon & Home Screen Icons -->
+    <link rel="icon" href="https://fwta-backup.sgp1.digitaloceanspaces.com/kbhpp/fwta-backup/logos/38627adafe73959ee5416be268004b81.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="https://fwta-backup.sgp1.digitaloceanspaces.com/kbhpp/fwta-backup/logos/38627adafe73959ee5416be268004b81.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Social Media Crawling (Open Graph) -->
+    <meta property="og:title" content="ទម្រង់សុំច្បាប់ឈប់សម្រាក - មន្ទីរពេទ្យគន្ធបុប្ផា">
+    <meta property="og:description" content="ទម្រង់បែបបទសម្រាប់សុំច្បាប់ឈប់សម្រាកប្រចាំឆ្នាំរបស់បុគ្គលិក មន្ទីរពេទ្យគន្ធបុប្ផា។">
+    <meta property="og:image" content="https://raw.githubusercontent.com/cungbarrish-wq/form-permision-kbhpp/da3a76839f637d2ac4c3107aaa461da2c31d9394/%E1%9E%9F%E1%9E%BB%E1%9F%86%E1%9E%85%E1%9F%92%E1%9E%94%E1%9E%B6%E1%9E%94%E1%9F%8B.png">
+    <meta property="og:type" content="website">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Moul&family=Suwannaphum:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-font: 'Khmer OS System', 'Khmer OS Battambang', 'Suwannaphum', sans-serif;
+        }
+
         body {
-            font-family: 'Khmer OS System', 'Battambang', sans-serif;
-            background-color: #f4f4f4;
-            color: #000;
-            line-height: 1.53; 
-            font-size: 14px;
-            padding-top: 1.0cm;
+            font-family: var(--primary-font);
+            background-color: #e0e4e8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* ផ្តើមពីខាងលើ */
+            min-height: 100vh;
+            overflow-x: hidden; /* លាក់របារអូសផ្តេក */
         }
-        /* Page Container */
+
+        /* Container សម្រាប់ទប់ការបង្រួម */
+        .page-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px; /* គម្លាតពីលើបន្តិច */
+        }
+
+        /* Actual A4 Page Layout */
         .page {
-            width: 210mm;
-            min-height: 297mm;
-            padding: 20mm;
-            margin: 10mm auto;
-            border: 1px #D3D3D3 solid;
-            border-radius: 5px;
+            width: 1122px; /* ទំហំបណ្តោយ A4 Landscape */
+            height: 794px; /* ទំហំទទឹង A4 Landscape */
             background: white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            position: relative;
+            padding: 56px 75px;
             box-sizing: border-box;
-            page-break-after: always; 
-            break-after: page;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            position: relative;
+            transform-origin: top center; /* បង្រួមពីកណ្តាលផ្នែកខាងលើ */
         }
-        .moul-font {
-            font-family: 'Khmer OS Muol Light', 'Khmer OS Muol', 'Moul', cursive;
+
+        /* Header Layout */
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0px; 
         }
-        .text-center { text-align: center; }
-        .header-section {
+
+        .left-header {
             text-align: center;
-            margin-top: -30px; 
-            margin-bottom: 20px;
-            line-height: 1.5;
+            width: 250px;
+            font-size: 14px;
         }
-        .photo-box {
-            position: absolute; top: 22mm; right: 20mm; width: 23mm; height: 28mm;
-            border: 1px solid #1f20229e; display: flex; align-items: center;
-            justify-content: center; text-align: center; color: #888888;
+
+        .center-header {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            font-family: 'Khmer OS Muol Light', 'Khmer OS Moul Light', 'Moul', cursive;
         }
-        .form-title { text-align: center; margin-top: 20px; margin-bottom: 20px; line-height: 1.8; }
-        .input-group {
-            display: flex; align-items: baseline; flex-wrap: wrap; margin-bottom: -9.5px;
+
+        .right-header {
+            width: 250px; 
         }
-        .input-dotted {
-            border: none; background-image: linear-gradient(to right, #000 50%, transparent 50%);
-            background-size: 5px 1px; background-position: bottom 12px left 0; background-repeat: repeat-x;
-            background-color: transparent; font-family: inherit; font-size: 14px; color: #132bb0;
-            padding: 4px 5px 6px 5px; line-height: normal; outline: none; flex-grow: 1; text-align: center;
-            -webkit-print-color-adjust: exact; print-color-adjust: exact;
+
+        .logo-img {
+            width: 130px; 
+            height: 130px;
+            object-fit: contain;
+            margin: 0 auto -20px auto; 
+            display: block;
         }
-        .w-auto { flex-grow: 1; }
-        .w-small { width: 100px; flex-grow: 0; }
-        .w-medium { width: 110px; flex-grow: 0; }
-        .w-home { width: 60px; flex-grow: 0; }
-      	.w-way { width: 80px; flex-grow: 0; }
-      	.w-town { width: 90px; flex-grow: 0; }
-      	.w-name { width: 180px; flex-grow: 0; }
-      	.w-sex { width: 40px; flex-grow: 0; }
-		.w-db { width: 160px; flex-grow: 0; }
-      	.w-db2 { width: 150px; flex-grow: 0; }
-        .salutation { text-align: center; margin-top: 15px; margin-bottom: 15px; line-height: 1.6; }
-        .attachments { margin-top: 10px; padding-left: 20px; }
-        .attachment-row { display: flex; align-items: baseline; margin-bottom: 0px; }
-        .dot-leader { flex-grow: 1; border-bottom: 2px dotted #000; margin: 0 8px; position: relative; top: 0px; }
-        .footer-dates { margin-top: 20px; display: flex; justify-content: flex-end; text-align: center; }
-        .signature-box { width: 300px; }
-        .signature-row { display: flex; justify-content: center; align-items: baseline; white-space: nowrap; margin-bottom: -8px; }
-      
-        .auto-width-input {
-            border: none; background-image: linear-gradient(to right, #131314eb 50%, transparent 50%);
-            background-size: 5px 1px; background-position: bottom 12px left 0; background-repeat: repeat-x;
-            background-color: transparent; font-family: inherit; font-size: 14px; color: #0d1798;
-            padding: 4px 2px 6px 2px; line-height: normal; outline: none; text-align: center;
-            -webkit-print-color-adjust: exact; print-color-adjust: exact;
+
+        /* Form Info Section */
+        .form-info {
+            text-align: center;
+            margin-bottom: 10px; 
+            font-size: 15px;
+            line-height: 1.8;
         }
-        
-        /* Control Buttons & Menu Bar */
-        .top-menu-bar {
-            position: fixed; top: 0; left: 0; width: 100%; height: 0.9cm; background-color: #1e1d1d;
-            z-index: 1000; display: flex; align-items: center; padding: 0 10px; 
-            box-sizing: border-box; box-shadow: 0 2px 5px rgba(0,0,0,0.5); overflow-x: auto;
+
+        .info-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
-        .top-menu-bar::-webkit-scrollbar { display: none; }
-        .hamburger-btn {
-            background: transparent; border: none; font-size: 20px; color: white; cursor: pointer;
-            padding: 0 10px 0 0; margin: 0; height: 100%; display: flex; align-items: center;
+
+        /* Print hide/show utilities */
+        .print-only { display: none; }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            page-break-inside: avoid; 
         }
-        .home-btn {
-            text-decoration: none; padding: 0 12px; background-color: #709141; color: white;
-            border-radius: 4px; font-size: 13px; height: 0.7cm; display: flex; align-items: center;
-            font-family: 'Khmer OS Battambang', 'Battambang', sans-serif; flex-shrink: 0; margin-right: 8px;
+
+        th, td {
+            border: 1px solid #000;
+            padding: 6px;
+            text-align: center;
+            vertical-align: middle;
         }
-        .controls-group { display: flex; gap: 8px; align-items: center; height: 100%; flex-wrap: nowrap; }
-        button {
-            font-family: 'Khmer OS Battambang', 'Battambang', sans-serif; padding: 0 12px; margin: 0;
-            cursor: pointer; border: none; border-radius: 4px; background-color: #007bff; color: white;
-            font-size: 13px; height: 0.7cm; display: flex; align-items: center; flex-shrink: 0;
+
+        th { font-weight: normal; height: 35px; }
+        td { height: 48px; }
+        tr { page-break-inside: avoid; }
+
+        .col-num { width: 3%; }
+        .col-date { width: 22%; text-align: left; padding-left: 10px; line-height: 1.8;}
+        .col-reason { width: 15%; }
+        .col-sign { width: 10%; }
+
+        /* Print Button */
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-family: var(--primary-font);
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        button.transfer-btn { background-color: #8e44ad; }
-        button.receive-btn { background-color: #d35400; }
-        button.save-btn { background-color: #28a745; }
-        button.clear-btn { background-color: #dc3545; }
-        button.telegram-btn { background-color: #0088cc; } 
-        
-        /* Modals & Sidebar Styles */
-        .modal-overlay {
-            display: none; position: fixed; top:0; left:0; width:100%; height:100%;
-            background: rgba(0,0,0,0.6); z-index: 2000;
+
+        .print-btn:hover {
+            background-color: #0b5ed7;
+            transform: translateY(-2px);
         }
-        .modal-content {
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            background: #fff; padding: 25px; border-radius: 8px; min-width: 320px; max-width:90%;
-            text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .modal-input {
-            width: 100%; padding: 10px; margin: 15px 0; border: 1px solid #ccc; border-radius: 4px;
-            font-family: inherit; font-size: 15px; box-sizing: border-box; outline: none;
-        }
-        .close-btn { position: absolute; right: 15px; top: 10px; cursor: pointer; font-size: 24px; color:#555; }
-        
-        .sidebar {
-            position: fixed; left: -320px; top: 0; width: 300px; height: 100%; background: #fff;
-            z-index: 2001; transition: left 0.3s ease; box-shadow: 2px 0 10px rgba(0,0,0,0.3);
-            padding: 20px; box-sizing: border-box; overflow-y: auto;
-        }
-        .sidebar-overlay {
-            display: none; position: fixed; top:0; left:0; width:100%; height:100%;
-            background: rgba(0,0,0,0.4); z-index: 2000;
-        }
-        .list-item {
-            padding: 12px; border-bottom: 1px solid #eee; font-size: 14px; display:flex; flex-direction:column;
-            text-align: left; background:#f9f9f9; margin-bottom:8px; border-radius:6px; transition: 0.2s; position: relative;
-        }
-        .list-item:hover { background: #f1f1f1; }
-        .action-buttons { display: flex; gap: 5px; margin-top: 8px; }
-        .open-btn { background: #17a2b8; font-size: 11px; padding: 5px 10px; height: auto; flex-grow: 1; justify-content: center;}
-        .delete-btn { background: #dc3545; font-size: 11px; padding: 5px 8px; height: auto; flex-grow: 0;}
-        
+
+        /* Print Specific CSS */
         @media print {
-            @page { size: A4; margin: 0; }
-            body { background: white; margin: 0; padding: 0 !important; }
-            #navbar-iframe, #Navbar1, .navbar, header, footer, #header-wrapper, .top-menu-bar, .no-print, .sidebar, .sidebar-overlay, .modal-overlay {
-                display: none !important;
+            .no-print { display: none !important; }
+            .print-only { display: inline !important; }
+
+            @page {
+                size: A4 landscape;
+                margin: 5mm; 
             }
-            .page { 
-                position: relative; border: none; box-shadow: none; margin: 0; padding: 15mm 20mm; width: 100%; 
-                min-height: 297mm; page-break-after: always; break-after: page;
+            
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+                display: block;
             }
-            .input-dotted, .auto-width-input { border-bottom: none; }
-            .dot-leader { border-bottom: 2px dotted #000 !important; }
+
+            .page-container {
+                padding: 0;
+            }
+            
+            .page {
+                width: 100% !important;
+                height: auto !important;
+                padding: 0 !important; 
+                margin: 0;
+                box-shadow: none;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+                transform: none !important; /* ដកការបង្រួមពេល Print */
+            }
+            
+            .print-btn { display: none !important; }
+            header, footer, nav, aside { display: none; }
         }
     </style>
 </head>
 <body>
-    
-    <div id="sidebarOverlay" class="sidebar-overlay" onclick="window.toggleSidebar()"></div>
-    <div id="sidebar" class="sidebar no-print">
-        <h3 class="moul-font" style="margin-top:0; border-bottom:2px solid #007bff; padding-bottom:10px; color:#007bff;">បញ្ជីទិន្នន័យទទួលបាន</h3>
-        <p style="font-size: 12px; color: #666; margin-bottom:15px;">ឈ្មោះខាងក្រោមនេះ គឺជាទិន្នន័យដែលអ្នកទទួលបានពី Device ផ្សេង។ អ្នកអាចចុចបើកមើលនៅពេលណាក៏បាន។</p>
-        <div id="receivedListContainer"></div>
-    </div>
 
-    <div class="top-menu-bar no-print">
-        <button class="hamburger-btn" onclick="window.toggleSidebar()">≡</button>
-        <a href="https://apply-form-01.blogspot.com/" class="home-btn">Home 🏡</a>
-        <div class="controls-group">
-            <button class="transfer-btn" onclick="window.openTransferModal()">ផ្ទេរ (Send)</button>
-            <button class="receive-btn" onclick="window.openReceiveModal()">ទទួល (Recv)</button>
-            <button class="save-btn" onclick="saveData()">Save 🗂</button>
-            <button onclick="window.print()">Print/PDF</button>
-            <button class="telegram-btn" onclick="shareToTelegram()">Telegram ✈️</button>
-            <button class="clear-btn" onclick="clearData()">Clear</button>
-        </div>
-    </div>
-
-    <div id="transferModal" class="modal-overlay no-print">
-        <div class="modal-content">
-            <span class="close-btn" onclick="window.closeModals()">&times;</span>
-            <h3 class="moul-font" style="color:#8e44ad; margin-top:10px;">ផ្ទេរទិន្នន័យ (Transfer)</h3>
-            <p style="font-size:13px; color:#555;">សូមបំពេញឈ្មោះរបស់អ្នក (សម្រាប់ឲ្យអ្នកទទួលចំណាំ)៖</p>
-            <input type="text" id="transferSenderName" class="modal-input" placeholder="វាយឈ្មោះនៅទីនេះ...">
-            <button onclick="window.generateAndSend()" style="background:#8e44ad; width:100%; height:auto; padding:12px; font-size:15px; justify-content:center;">បង្កើតកូដផ្ញើទិន្នន័យ</button>
-            <div id="transferCodeDisplay" style="display:none; margin-top:20px; background:#f0f4f8; padding:15px; border-radius:5px; border:1px dashed #0088cc;">
-                <p style="margin:0; font-weight:bold;">លេខកូដសម្ងាត់របស់អ្នកគឺ៖</p>
-                <h1 style="margin:10px 0; color:#d35400; letter-spacing: 5px; font-size:32px;" id="theCode"></h1>
-                <p style="margin:0; font-size:12px; color:#666;">សូមប្រាប់លេខកូដនេះទៅកាន់អ្នកទទួល។</p>
+    <div class="page-container">
+        <div class="page" id="a4-page">
+            <!-- Header Section -->
+            <div class="header-wrapper">
+                <div class="left-header">
+                    <div style="font-family: 'Khmer OS Muol Light', 'Khmer OS Moul Light', 'Moul', cursive;">ក្រសួងសុខាភិបាល</div>
+                    <img src="https://fwta-backup.sgp1.digitaloceanspaces.com/kbhpp/fwta-backup/logos/38627adafe73959ee5416be268004b81.jpg" alt="ឡូហ្គោ មន្ទីរពេទ្យគន្ធបុប្ផា" class="logo-img">
+                </div>
+                
+                <div class="center-header">
+                    ព្រះរាជាណាចក្រកម្ពុជា<br>ជាតិ សាសនា ព្រះមហាក្សត្រ
+                </div>
+                
+                <div class="right-header"></div>
             </div>
-        </div>
-    </div>
 
-    <div id="receiveModal" class="modal-overlay no-print">
-        <div class="modal-content">
-            <span class="close-btn" onclick="window.closeModals()">&times;</span>
-            <h3 class="moul-font" style="color:#d35400; margin-top:10px;">ទទួលទិន្នន័យ (Receive)</h3>
-            <p style="font-size:13px; color:#555;">សូមបញ្ចូលលេខកូដសម្ងាត់ ៦ខ្ទង់៖</p>
-            <input type="text" id="receiveCodeInput" class="modal-input" placeholder="ឧ. 123456" maxlength="6" style="text-align:center; font-size:20px; letter-spacing:4px; font-weight:bold;">
-            <button onclick="window.checkReceiveCode()" style="background:#d35400; width:100%; height:auto; padding:12px; font-size:15px; justify-content:center;">ស្វែងរកទិន្នន័យ</button>
-            
-            <div id="receiveConfirmSection" style="display:none; margin-top:20px; border-top:1px solid #eee; padding-top:15px;">
-                <p style="margin-bottom:15px;">មានទិន្នន័យផ្ញើមកពី៖ <br><b id="senderNameDisplay" style="color:#28a745; font-size:20px; display:block; margin-top:5px;"></b></p>
-                <div style="display:flex; gap:10px; justify-content:center;">
-                    <button onclick="window.acceptTransfer()" style="background:#28a745; flex:1; height:auto; padding:12px; justify-content:center;">ទទួលយល់ព្រម</button>
-                    <button onclick="window.rejectTransfer()" style="background:#dc3545; flex:1; height:auto; padding:12px; justify-content:center;">បដិសេធន៍</button>
+            <!-- Info Section -->
+            <div class="form-info">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <div style="width: 250px; text-align: center; font-size: 14px;">ការិយាល័យបច្ចេកទេស</div>
+                    <div style="flex-grow: 1; text-align: center;">
+                        <span style="margin-right: 20px;">ឈ្មោះ.........................................</span>
+                        <span>ផ្នែក.......................</span>
+                    </div>
+                    <div style="width: 250px;"></div>
+                </div>
+                <div class="info-row">
+                    <span>ច្បាប់ឈប់សម្រាកប្រចាំឆ្នាំ២០........</span>
+                    <span>
+                        <select id="roleType" class="no-print" onchange="document.getElementById('printRole').innerText = this.value + '..........................................'" style="font-family: inherit; font-size: inherit; padding: 2px 5px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px;">
+                            <option value="DES">DES</option>
+                            <option value="INTERN">INTERN</option>
+                        </select>
+                        <span class="no-print">..........................................</span>
+                        <span id="printRole" class="print-only">DES..........................................</span>
+                    </span>
+                    <span>ឆ្នាំទី..................</span>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="page">
-        <div class="header-section moul-font">
-            <span style="font-size: 16px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
-            <span style="font-size: 14px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
-            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEizcxq3b-xmvlpSr24nEHaiRSPcJ1xoba2QqqIUc-Imqb3B2AurC7Z1NCKOUFncDClGyZ3uaZyA5hGWst3HpivzVCs2vcTsjAYR5M7zV3ht-AI0tq__RADXBXikVnmwrfpZJd_M9GBC_u1zyclVrJPqehcPBW_9eNuX_SztVJH3a3i6gGKMRa_ob-qe9zI=s16000" alt="kbach" style="height: 25px; margin-top: 0px;">
-        </div>
-
-        <div class="photo-box">រូបថត<br>៤x៦</div>
-
-        <div class="form-title moul-font">
-            ពាក្យសុំចូល<br>
-            សមាជិកភាព វិភាគទានយោធិនមរណភាព<br>
-            ក្រសួងការពារជាតិ (វ.យ.ម.ក)<br>
-            <div style="margin-top: 10px; text-align: center;">
-                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhx0qlRIHbeM5w4r_CzC6xYGwYGnoO-zCBpvlCAa3-zyTtWVaMQQwqatE-2JW6RQuZK0sb0lqnC1S4P_n54XI8UKoXnaYnyJLyBeZHKpuLsVUXQc-kIK2feCyGQqHaZMblR-dm9PG0GDLYxI1UoA_URX9MDYzigdbGmO24kz-s9W7TaKZxjiB8DxbbZpiY" alt="kbach-divider" style="height: 12px; width: auto;">
-            </div>
-        </div>
-
-        <div class="input-group">
-          <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
-            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="name" class="input-dotted w-name">
-            ភេទ <input type="text" id="gender" class="input-dotted w-sex">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="dob" class="input-dotted w-db">
-        </div>
-        <div class="input-group">
-            អត្តលេខ <input type="text" id="idNum" class="input-dotted w-small">
-            ឋានន្តរសក្តិ <input type="text" id="rank" class="input-dotted w-small">
-            មុខតំណែង <input type="text" id="position" class="input-dotted w-auto">
-        </div>
-        <div class="input-group">
-            កងឯកភាព <input type="text" id="unit" class="input-dotted w-auto">
-        </div>
-        <div class="input-group">
-            ទីកន្លែងកំណើតៈ ស្រុក/ខណ្ឌ <input type="text" id="pob_district" class="input-dotted w-auto">
-            ខេត្ត/ក្រុង <input type="text" id="pob_province" class="input-dotted w-auto">
-        </div>
-        <div class="input-group">
-            អាស័យដ្ឋានបច្ចុប្បន្នៈ ផ្ទះលេខ <input type="text" id="curr_house" class="input-dotted w-home">
-            ផ្លូវ <input type="text" id="curr_st" class="input-dotted w-way">
-            ភូមិ <input type="text" id="curr_village" class="input-dotted w-auto">
-        </div>
-        <div class="input-group">
-            
-            ឃុំ/សង្កាត់ <input type="text" id="curr_commune" class="input-dotted w-small">
-            ស្រុក/ខណ្ឌ <input type="text" id="cp2_ass_district" class="input-dotted w-medium">
-          	ខេត្ត/ក្រុង <input type="text" id="curr_province" class="input-dotted w-auto">
-        </div>
-        <div class="input-group">
-            លេខអត្តសញ្ញាណប័ណ្ណ ខភម <input type="text" id="military_id" class="input-dotted w-name">
-            លេខទូរស័ព្ទ <input type="text" id="phone" class="input-dotted w-auto">
-        </div>
-
-        <div class="salutation moul-font">
-            សូមគោរពជូន<br>
-            ឯកឧត្តម នាយឧត្តមសេនីយ៍ អគ្គនាយក អគ្គនាយកដ្ឋានយោធសេវា<br>
-            និងជា ប្រធានគណៈកម្មការវិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ
-        </div>
-
-        <div style="text-indent: 50px; text-align: justify;">
-            មេត្តាអនុញ្ញាតចុះឈ្មោះខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="repeat_name" class="input-dotted" style="width: 200px;"> ចូលជាសមាជិកភាព
-            វិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ ដោយក្តីអនុគ្រោះ។
-        </div>
-
-        <div class="B" style="margin-top: 20px; text-decoration: underline; text-align: center;"><B>សូមភ្ជាប់មកជាមួយនូវ ៖</B></div>
-        
-        <div class="attachments">
-            <div class="attachment-row"><span>១- អត្តសញ្ញាណប័ណ្ណ ខភម និងអត្តសញ្ញាណប័ណ្ណសញ្ជាតិខ្មែរ</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
-            <div class="attachment-row"><span>២- សៀវភៅគ្រួសារ ឬ សៀវភៅស្នាក់នៅ</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
-            <div class="attachment-row"><span>៣- រូបថត ខភម ( ៤ x ៦ )</span><span class="dot-leader"></span><span>០៨សន្លឹក</span></div>
-            <div class="attachment-row"><span>៤- លិខិតបណ្តាំ វ.យ.ម.ក</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
-            <div class="attachment-row"><span>៥- អត្តសញ្ញាណប័ណ្ណ អ្នកទទួលអត្ថប្រយោជន៍ វ.យ.ម.ក</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
-        </div>
-
-        <div class="footer-dates">
-            <div class="signature-box" style="width: auto; min-width: 350px;">
-                <div class="signature-row">
-                    ថ្ងៃ<input type="text" id="d_day1" class="auto-width-input" data-min="25" style="width: 25px;">
-                    ខែ<input type="text" id="d_month1" class="auto-width-input" data-min="40" style="width: 40px;">
-                    ឆ្នាំ<input type="text" id="d_year_zodiac" class="auto-width-input" data-min="40" style="width: 40px;">
-                    ព.ស<input type="text" id="d_buddhist_year" class="auto-width-input" data-min="25" style="width: 25px;">
-                </div>
-                <div class="signature-row">
-                    ធ្វើនៅ<input type="text" id="d_place" class="auto-width-input" data-min="80" style="width: 100px;">
-                    ថ្ងៃទី<input type="text" id="d_day2" class="auto-width-input" data-min="25" style="width: 25px;">
-                    ខែ<input type="text" id="d_month2" class="auto-width-input" data-min="40" style="width: 40px;">
-                    ឆ្នាំ<input type="text" id="d_year2" class="auto-width-input" data-min="25" style="width: 25px;">
-                </div>
-              <div class="B" style="margin-top: 10px; "><B>ស្នាមមេដៃសាមីខ្លួន</B></div>
-            </div>
+            <!-- Table Section -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-num"></th>
+                        <th class="col-date"></th>
+                        <th class="col-reason">មូលហេតុ</th>
+                        <th class="col-sign">ហត្ថលេខា<br>សាមីខ្លួន</th>
+                        <th class="col-sign">នាយផ្នែក</th>
+                        <th class="col-sign">ប្រធានក្រុម<br>យាម</th>
+                        <th class="col-sign">ការិយាល័យ<br>បច្ចេកទេស</th>
+                        <th class="col-sign">នាយកមន្ទីរ<br>ពេទ្យ</th>
+                        <th class="col-sign">ផ្សេងៗ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>១</td>
+                        <td class="col-date">ថ្ងៃទី..........ខែ........ដល់<br>ទី..........ខែ........ឆ្នាំ២០...</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>២</td>
+                        <td class="col-date">ថ្ងៃទី..........ខែ........ដល់<br>ទី..........ខែ........ឆ្នាំ២០...</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>៣</td>
+                        <td class="col-date">ថ្ងៃទី..........ខែ........ដល់<br>ទី..........ខែ........ឆ្នាំ២០...</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>៤</td>
+                        <td class="col-date">ថ្ងៃទី..........ខែ........ដល់<br>ទី..........ខែ........ឆ្នាំ២០...</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>៥</td>
+                        <td class="col-date">ថ្ងៃទី..........ខែ........ដល់<br>ទី..........ខែ........ឆ្នាំ២០...</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>៦</td>
+                        <td class="col-date">ថ្ងៃទី..........ខែ........ដល់<br>ទី..........ខែ........ឆ្នាំ២០...</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
+    <button class="print-btn" onclick="window.print()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        បោះពុម្ព (Print)
+    </button>
 
-    <div class="page">
-        <div class="header-section moul-font">
-            <span style="font-size: 16px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
-            <span style="font-size: 14px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
-            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEizcxq3b-xmvlpSr24nEHaiRSPcJ1xoba2QqqIUc-Imqb3B2AurC7Z1NCKOUFncDClGyZ3uaZyA5hGWst3HpivzVCs2vcTsjAYR5M7zV3ht-AI0tq__RADXBXikVnmwrfpZJd_M9GBC_u1zyclVrJPqehcPBW_9eNuX_SztVJH3a3i6gGKMRa_ob-qe9zI=s16000" alt="kbach" style="height: 25px; margin-top: 0px;">
-        </div>
-
-        <div class="photo-box">រូបថត<br>៤x៦</div>
-
-        <div class="form-title moul-font">
-            លិខិតបណ្តាំ<br>
-            វ.យ.ម.ក<br>
-            <div style="margin-top: 10px; text-align: center;">
-                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhx0qlRIHbeM5w4r_CzC6xYGwYGnoO-zCBpvlCAa3-zyTtWVaMQQwqatE-2JW6RQuZK0sb0lqnC1S4P_n54XI8UKoXnaYnyJLyBeZHKpuLsVUXQc-kIK2feCyGQqHaZMblR-dm9PG0GDLYxI1UoA_URX9MDYzigdbGmO24kz-s9W7TaKZxjiB8DxbbZpiY" alt="kbach-divider" style="height: 12px; width: auto;">
-            </div>
-        </div>
-
-        <div style="margin-bottom: 15px; text-align: justify;">
-            <div style="display: flex;">
-                <div class="moul-font" style= "width: 45px; ">យោង៖</div>
-                <div style="flex-grow: 1;">
-                     - សេចក្តីកំណត់លេខ ០០៣/២០២៥ ស.ក.ណ ចុះថ្ងៃទី២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីវិភាគទាន យោធិនមរណភាពក្រសួងការពារជាតិ។<br>
-                    - សេចក្តីសម្រេចលេខ ០៦៦ សសរ.កពជ ចុះថ្ងៃទី ២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីការបង្កើតគណៈកម្មការវិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ
-                </div>
-            </div>
-        </div>
-
-        <div class="input-group">
-          <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
-            ខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="p2_name" class="input-dotted w-name">
-            ភេទ <input type="text" id="p2_gender" class="input-dotted w-sex">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_dob" class="input-dotted w-db">
-        </div>
-        <div class="input-group">
-            អត្តលេខ <input type="text" id="p2_idNum" class="input-dotted w-small">
-            ឋានន្តរសក្តិ <input type="text" id="p2_rank" class="input-dotted w-small">
-            មុខតំណែង <input type="text" id="p2_position" class="input-dotted w-auto">
-        </div>
-        <div class="input-group">កងឯកភាព <input type="text" id="p2_unit" class="input-dotted w-auto"></div>
-
-        <div class="B" style="text-align: center; margin: 10px 0 10px 0;"><B>សូមប្រគល់សិទ្ធិក្នុងការទទួលអត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាព</B></div>
-
-        <div class="input-group">
-         <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
-            ជូនទៅឈ្មោះ <input type="text" id="p2_ass_name" class="input-dotted w-name">
-            ភេទ <input type="text" id="p2_ass_gender" class="input-dotted w-sex">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_ass_dob" class="input-dotted w-db2">
-        </div>
-        <div class="input-group">
-            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_ass_id" class="input-dotted w-medium">
-            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_ass_house" class="input-dotted w-home">
-            ផ្លូវ <input type="text" id="p2_ass_st" class="input-dotted w-way">
-            
-        </div>
-        <div class="input-group">
-          	
-            ភូមិ <input type="text" id="p2_ass_village" class="input-dotted w-small">
-            ឃុំ/សង្កាត់ <input type="text" id="p2_ass_commune" class="input-dotted w-small">
-            ស្រុក/ខណ្ឌ <input type="text" id="p2_ass_district" class="input-dotted w-small">
-            ខេត្ត/ក្រុង <input type="text" id="p2_ass_prov" class="input-dotted w-town">
-        </div>
-        <div class="input-group">
-            លេខទូរស័ព្ទ <input type="text" id="p2_ass_phone" class="input-dotted w-name">
-            ត្រូវជា <input type="text" id="p2_ass_rel" class="input-dotted w-small">
-        </div>
-        <div style="text-align: justify; margin-top:2px;">
-            ជាអ្នក<B>ទទួលសិទ្ធិបើកប្រាក់អត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ</B><br> ដោយអនុលោមតាមសេចក្តីកំណត់ចុងក្រោយស្តីពីវិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ។
-        </div>
-
-        <div class="input-group" style="margin-top: -3px;">
-            ក្នុងករណីឈ្មោះ <input type="text" id="p2_missing_name" class="input-dotted w-name"> អវត្តមាន សូមផ្តល់សិទ្ធិជូនទៅ៖
-        </div>
-        <div class="input-group">
-            - ឈ្មោះ <input type="text" id="p2_sub1_name" class="input-dotted w-name">
-            ភេទ <input type="text" id="p2_sub1_gender" class="input-dotted w-sex">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub1_dob" class="input-dotted w-db">
-        </div>
-        <div class="input-group">
-            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub1_id" class="input-dotted w-medium">
-            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_sub1_house" class="input-dotted w-home">
-            ផ្លូវ <input type="text" id="p2_sub1_st" class="input-dotted w-way">
-            
-        </div>
-        <div class="input-group">
-           	ភូមិ <input type="text" id="p2_sub1_village" class="input-dotted w-small">
-            ឃុំ/សង្កាត់ <input type="text" id="p2_sub1_commune" class="input-dotted w-small">
-            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub1_district" class="input-dotted w-small">
-            ខេត្ត/ក្រុង <input type="text" id="p2_sub1_prov" class="input-dotted w-town">
-        </div>
-        <div class="input-group">
-            លេខទូរស័ព្ទ <input type="text" id="p2_sub1_phone" class="input-dotted w-name">
-            ត្រូវជា <input type="text" id="p2_sub1_rel" class="input-dotted w-small">
-        </div>
-
-        <div class="input-group">
-            - ឬឈ្មោះ <input type="text" id="p2_sub2_name" class="input-dotted w-name">
-            ភេទ <input type="text" id="p2_sub2_gender" class="input-dotted w-sex">
-            ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub2_dob" class="input-dotted w-db">
-        </div>
-        <div class="input-group">
-            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub2_id" class="input-dotted w-medium">
-            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_sub2_house" class="input-dotted w-home">
-            ផ្លូវ <input type="text" id="p2_sub2_st" class="input-dotted w-way">
-            
-        </div>
-        <div class="input-group">
-            ភូមិ <input type="text" id="p2_sub2_village" class="input-dotted w-small">
-            ឃុំ/សង្កាត់ <input type="text" id="p2_sub2_commune" class="input-dotted w-small">
-            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub2_district" class="input-dotted w-small">
-            ខេត្ត/ក្រុង <input type="text" id="p2_sub2_prov" class="input-dotted w-town">
-        </div>
-        <div class="input-group">
-            លេខទូរស័ព្ទ <input type="text" id="p2_sub2_phone" class="input-dotted w-name">
-            ត្រូវជា <input type="text" id="p2_sub2_rel" class="input-dotted w-small">
-        </div>
-
-        <div style="text-align: justify; margin-top: 5px;"><div style="text-indent: 50px; text-align: justify;">
-            លិខិតបណ្តាំនេះធ្វើឡើងដោយឆន្ទៈពិតប្រាកដដោយមិនមានការបង្ខិតបង្ខំធ្វើឡើងចំនួន០៣ច្បាប់<br>មានតម្លៃគតិយុត្តិស្មើៗគ្នា០១ច្បាប់តម្កល់នៅលេខាធិការដ្ឋាន(វ.យ.ម.ក)និង០១ច្បាប់<br>តម្កល់នៅក្រុមការងារសាមីអង្គភាពរៀងៗខ្លួន និង០១ច្បាប់ទៀត ផ្តល់ជូនសាមីខ្លួន។
-        </div>
-
-        <div style="display: flex; justify-content: space-between; margin-top: 10px; text-align: center;">
-            <div style="width: 32%;">
-                <div class="signature-row" style="justify-content: flex-start; margin-top:13px;">
-                    លេខ <input type="text" id="p2_cmd_num" class="auto-width-input" data-min="60" style="width: 60px;">
-                </div>
-                <div class="signature-row" style="margin-top: 5px; justify-content: flex-start;">
-                    ថ្ងៃទី <input type="text" id="p2_cmd_day" class="auto-width-input" data-min="25" style="width: 25px;">
-                    ខែ <input type="text" id="p2_cmd_month" class="auto-width-input" data-min="25" style="width: 25px;">
-                    ឆ្នាំ <input type="text" id="p2_cmd_year" class="auto-width-input" data-min="25" style="width: 25px;">
-                </div>
-                <div style="margin-top: 5px; font-weight: bold;">បានឃើញនិងឯកភាព</div><br>
-                <div class="moul-font" style="margin-top: -20px; ">មេបញ្ជាការ</div>
-            </div>
-
-            <div style="width: 30%;">
-                <div class="B" style="margin-top: 55px; font-weight: bold;">ក្រុមការងារ (វយមក)<br>កងឯកភាព</div>
-            </div>
-
-            <div style="width: 38%;">
-                <div class="signature-row" style="justify-content: flex-end; margin-top:-10px;">
-                    ថ្ងៃ<input type="text" id="p2_d_day1" class="auto-width-input" data-min="20" style="width: 20px;">
-                    ខែ<input type="text" id="p2_d_month1" class="auto-width-input" data-min="30" style="width: 30px;">
-                    ឆ្នាំ<input type="text" id="p2_d_year_zodiac" class="auto-width-input" data-min="30" style="width: 30px;">
-                    ព.ស<input type="text" id="p2_d_buddhist_year" class="auto-width-input" data-min="20" style="width: 20px;">
-                </div>
-                <div class="signature-row" style="justify-content: flex-end;">
-                    ធ្វើនៅ<input type="text" id="p2_d_place" class="auto-width-input" data-min="80" style="width: 80px;">
-                    ថ្ងៃទី<input type="text" id="p2_d_day2" class="auto-width-input" data-min="20" style="width: 20px;">
-                    ខែ<input type="text" id="p2_d_month2" class="auto-width-input" data-min="30" style="width: 30px;">
-                    ឆ្នាំ<input type="text" id="p2_d_year2" class="auto-width-input" data-min="20" style="width: 20px;">
-                </div>
-                <div class="B" style="margin-top: 10px; font-weight: bold;">អ្នកប្រគល់សិទ្ធិ<br>ស្នាមមេដៃ</div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Script សម្រាប់បង្រួមក្រដាសឲ្យ Fit ជាមួយអេក្រង់ទូរស័ព្ទ -->
     <script>
-        // អថេរសម្គាល់ថា តើយើងកំពុងមើលឯកសារអ្នកណា? (null មានន័យថាកំពុងមើលឯកសារផ្ទាល់ខ្លួន)
-        window.currentlyViewingRecordId = null;
-
-        // Global variables for UI functions
-        window.adjustWidth = function(input) {
-            let span = document.getElementById('measure-span');
-            if (!span) {
-                span = document.createElement('span');
-                span.id = 'measure-span';
-                span.style.cssText = 'position:absolute; visibility:hidden; white-space:pre; font-family:"Khmer OS System", "Battambang", sans-serif; font-size:14px;';
-                document.body.appendChild(span);
-            }
-            span.textContent = input.value || '';
-            const minW = parseInt(input.getAttribute('data-min')) || 25;
-            input.style.width = Math.max(span.offsetWidth + 15, minW) + 'px';
-        }
-
-        window.onload = function() {
-            window.currentlyViewingRecordId = null;
-            const inputs = document.querySelectorAll('input[type="text"]');
-            inputs.forEach(input => {
-                if(!input.classList.contains('modal-input')) {
-                    const savedValue = localStorage.getItem(input.id);
-                    if (savedValue) input.value = savedValue;
-                    if (input.classList.contains('auto-width-input')) {
-                        input.addEventListener('input', function() { window.adjustWidth(this); });
-                        window.adjustWidth(input);
-                    }
-                }
-            });
-            window.renderSidebarList();
-        };
-
-        // លាក់ការ Save ដោយស្វ័យប្រវត្តិដើម្បីការពារកុំឲ្យបាត់ទិន្នន័យដើម
-        window.savePersonalDataSilently = function() {
-            const inputs = document.querySelectorAll('input[type="text"]');
-            inputs.forEach(input => {
-                if(!input.classList.contains('modal-input') && input.id) {
-                    localStorage.setItem(input.id, input.value);
-                }
-            });
-        }
-
-        window.saveData = function() {
-            if (window.currentlyViewingRecordId) {
-                // ប្រសិនបើកំពុងកែទិន្នន័យអ្នកផ្សេង គឺរក្សាទុកទៅក្នុងបញ្ជីនោះវិញ (មិនឲ្យប៉ះពាល់ទិន្នន័យដើម)
-                let list = JSON.parse(localStorage.getItem('receivedList') || '[]');
-                const recordIndex = list.findIndex(r => r.id === window.currentlyViewingRecordId);
-                if (recordIndex > -1) {
-                    list[recordIndex].data = window.getFormData();
-                    localStorage.setItem('receivedList', JSON.stringify(list));
-                    window.renderSidebarList();
-                    alert('ការកែប្រែទិន្នន័យរបស់អ្នកផ្ញើមក ត្រូវបានរក្សាទុក!');
-                }
+        function scalePage() {
+            const page = document.getElementById('a4-page');
+            const container = document.querySelector('.page-container');
+            const screenWidth = window.innerWidth;
+            const pageWidth = 1122; // ទំហំដើម A4
+            
+            // បើអេក្រង់តូចជាងក្រដាស ធ្វើការបង្រួម
+            if (screenWidth < pageWidth) {
+                const scale = (screenWidth - 20) / pageWidth; // ដក 20px សម្រាប់គម្លាតសងខាង
+                page.style.transform = `scale(${scale})`;
+                
+                // កែសម្រួលកម្ពស់ Container ដើម្បីកុំឲ្យមានគម្លាតសល់ខាងក្រោមច្រើនពេក
+                const scaledHeight = 794 * scale;
+                container.style.height = `${scaledHeight + 40}px`; 
             } else {
-                // រក្សាទុកទិន្នន័យផ្ទាល់ខ្លួនរបស់ខ្ញុំ
-                window.savePersonalDataSilently();
-                alert('ទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នក ត្រូវបានរក្សាទុកក្នុង Browser រួចរាល់!');
+                page.style.transform = 'scale(1)';
+                container.style.height = 'auto';
             }
         }
 
-        window.clearData = function() {
-            if(confirm('តើអ្នកពិតជាចង់លុបទិន្នន័យទាំងអស់នៅលើទម្រង់បច្ចុប្បន្នមែនទេ?')) {
-                const inputs = document.querySelectorAll('input[type="text"]');
-                inputs.forEach(input => {
-                    if(!input.classList.contains('modal-input')) {
-                        input.value = '';
-                    }
-                });
-                
-                // ប្រសិនបើកំពុងនៅទំព័រខ្លួនឯង លុបពី Storage ផង
-                if (!window.currentlyViewingRecordId) {
-                    inputs.forEach(input => {
-                        if(!input.classList.contains('modal-input') && input.id) {
-                            localStorage.removeItem(input.id);
-                        }
-                    });
-                }
-            }
-        }
-
-        window.shareToTelegram = function() {
-            const name = document.getElementById('name').value || '...';
-            const idNum = document.getElementById('idNum').value || '...';
-            const unit = document.getElementById('unit').value || '...';
-            const phone = document.getElementById('phone').value || '...';
-            const ass_name = document.getElementById('p2_ass_name').value || '...';
-            const ass_rel = document.getElementById('p2_ass_rel').value || '...';
-            const ass_phone = document.getElementById('p2_ass_phone').value || '...';
-
-            const message = `📄 *ព័ត៌មានសុំចូលសមាជិកភាព វ.យ.ម.ក*\n\n` +
-                            `👤 *សាមីខ្លួន*\n- ឈ្មោះ: ${name}\n- អត្តលេខ: ${idNum}\n- កងឯកភាព: ${unit}\n- លេខទូរស័ព្ទ: ${phone}\n\n` +
-                            `👥 *អ្នកទទួលសិទ្ធិទី១*\n- ឈ្មោះ: ${ass_name}\n- ត្រូវជា: ${ass_rel}\n- លេខទូរស័ព្ទ: ${ass_phone}`;
-            window.open(`https://t.me/share/url?url=&text=${encodeURIComponent(message)}`, '_blank');
-        }
-
-        /* UI Modal & Sidebar Functions */
-        window.openTransferModal = function() {
-            document.getElementById('transferModal').style.display = 'block';
-            document.getElementById('transferCodeDisplay').style.display = 'none';
-            document.getElementById('transferSenderName').value = '';
-        }
-        window.openReceiveModal = function() {
-            document.getElementById('receiveModal').style.display = 'block';
-            document.getElementById('receiveConfirmSection').style.display = 'none';
-            document.getElementById('receiveCodeInput').value = '';
-        }
-        window.closeModals = function() {
-            document.getElementById('transferModal').style.display = 'none';
-            document.getElementById('receiveModal').style.display = 'none';
-        }
-        window.toggleSidebar = function() {
-            const sidebar = document.getElementById('sidebar');
-            const overlay = document.getElementById('sidebarOverlay');
-            if (sidebar.style.left === '0px') {
-                sidebar.style.left = '-320px';
-                overlay.style.display = 'none';
-            } else {
-                sidebar.style.left = '0px';
-                overlay.style.display = 'block';
-                window.renderSidebarList();
-            }
-        }
-
-        // មុខងារត្រឡប់ទៅទិន្នន័យផ្ទាល់ខ្លួនវិញ
-        window.loadPersonalData = function() {
-            if (!window.currentlyViewingRecordId) {
-                window.toggleSidebar();
-                return; // កំពុងមើលឯកសារខ្លួនឯងស្រាប់ហើយ
-            }
-
-            window.currentlyViewingRecordId = null; // ដូររបៀបមកជាមើលឯកសារខ្លួនឯងវិញ
-            const inputs = document.querySelectorAll('input[type="text"]');
-            inputs.forEach(input => {
-                if(!input.classList.contains('modal-input') && input.id) {
-                    input.value = localStorage.getItem(input.id) || ''; // ទាញយកពី Local Storage ដើមមកវិញ
-                    if(input.classList.contains('auto-width-input')) window.adjustWidth(input);
-                }
-            });
-
-            window.renderSidebarList(); // កែ Refresh បញ្ជី
-            window.toggleSidebar(); // បិទបញ្ជី
-        }
-
-        window.renderSidebarList = function() {
-            const container = document.getElementById('receivedListContainer');
-            const list = JSON.parse(localStorage.getItem('receivedList') || '[]');
-            
-            // បន្ថែមប៊ូតុង "ទិន្នន័យផ្ទាល់ខ្លួន" នៅខាងលើគេបង្អស់ជានិច្ច
-            const isViewingPersonal = (window.currentlyViewingRecordId === null);
-            let html = `
-                <div class="list-item" style="background: ${isViewingPersonal ? '#e6f4ea' : '#f8f9fa'}; border-left: 4px solid #28a745; cursor: pointer; padding-bottom: 8px;" onclick="window.loadPersonalData()">
-                    <b style="color: #28a745; font-size: 15px;">👤 ទិន្នន័យផ្ទាល់ខ្លួនរបស់ខ្ញុំ ${isViewingPersonal ? '(កំពុងបើក)' : ''}</b>
-                    <span style="font-size:11px; color:#555; margin-top:3px;">ចុចទីនេះ ដើម្បីត្រឡប់មកឯកសារដើមរបស់អ្នក</span>
-                </div>
-                <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0 10px 0;">
-            `;
-
-            if (list.length === 0) {
-                html += '<p style="color:#888; text-align:center;">មិនទាន់មានបញ្ជីឈ្មោះអ្នកផ្សេងទេ</p>';
-            } else {
-                html += list.map((item, i) => {
-                    const isViewingThis = window.currentlyViewingRecordId === item.id;
-                    const borderStyle = isViewingThis ? 'border-left: 4px solid #007bff; background: #eef7ff;' : '';
-                    return `<div class="list-item" style="${borderStyle}">
-                        <b>${i+1}. ឈ្មោះ: ${item.name}</b>
-                        <span style="font-size:12px; color:#555; margin-top:3px;">📅 ផ្ទេរមកនៅ៖ ${item.date}</span>
-                        <div class="action-buttons">
-                            <button class="open-btn" onclick="window.loadRecord('${item.id}')" ${isViewingThis ? 'disabled style="background:#888;"' : ''}>
-                                ${isViewingThis ? 'កំពុងបើកមើល' : '👁️ បើកមើលឯកសារនេះ'}
-                            </button>
-                            <button class="delete-btn" onclick="window.deleteRecord('${item.id}')">🗑️</button>
-                        </div>
-                    </div>`;
-                }).join('');
-            }
-            container.innerHTML = html;
-        }
-        
-        // មុខងារទាញទិន្នន័យពីបញ្ជី មកបង្ហាញលើ Form
-        window.loadRecord = function(recordId) {
-            const list = JSON.parse(localStorage.getItem('receivedList') || '[]');
-            const record = list.find(r => r.id === recordId);
-            if (!record) return;
-
-            // មុននឹងប្តូរទៅមើលអ្នកផ្សេង បើកំពុងនៅទំព័រខ្លួនឯង ត្រូវ Save ទុកសិនកុំឲ្យបាត់អ្វីដែលទើបវាយ
-            if (!window.currentlyViewingRecordId) {
-                window.savePersonalDataSilently();
-            }
-
-            // ប្តូររបៀបទៅជាមើលឯកសារអ្នកផ្សេង
-            window.currentlyViewingRecordId = recordId;
-            const parsedData = record.data;
-            Object.keys(parsedData).forEach(key => {
-                const el = document.getElementById(key);
-                if(el && !el.classList.contains('modal-input')) {
-                    el.value = parsedData[key] || '';
-                    if(el.classList.contains('auto-width-input')) window.adjustWidth(el);
-                }
-            });
-            
-            window.renderSidebarList(); 
-            window.toggleSidebar(); 
-        }
-
-        // មុខងារលុបឈ្មោះចេញពីបញ្ជី
-        window.deleteRecord = function(recordId) {
-            if(!confirm("តើអ្នកពិតជាចង់លុបទិន្នន័យបុគ្គលនេះចេញពីបញ្ជីមែនទេ?")) return;
-            let list = JSON.parse(localStorage.getItem('receivedList') || '[]');
-            list = list.filter(r => r.id !== recordId);
-            localStorage.setItem('receivedList', JSON.stringify(list));
-            
-            // បើទិន្នន័យដែលលុប គឺជាទិន្នន័យដែលកំពុងបើកមើល ត្រូវលោតទៅទំព័រផ្ទាល់ខ្លួនវិញ
-            if (window.currentlyViewingRecordId === recordId) {
-                window.loadPersonalData();
-            } else {
-                window.renderSidebarList();
-            }
-        }
-        
-        window.getFormData = function() {
-            const data = {};
-            document.querySelectorAll('input[type="text"]').forEach(input => {
-                if(!input.classList.contains('modal-input') && input.id) {
-                    data[input.id] = input.value;
-                }
-            });
-            return data;
-        }
-    </script>
-
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, getDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
-
-        let db, auth, appId, currentUser, firebaseInitError = "";
-
-        // 👉 កូដ Firebase Config ដែលបានយកចេញពីរូបភាពរបស់អ្នក
-        const githubFirebaseConfig = {
-            apiKey: "AIzaSyC5w7iyaiTgtcBSQ7YB_d9m5fqFthrAMdw",
-            authDomain: "data-transfer-2dd69.firebaseapp.com",
-            projectId: "data-transfer-2dd69",
-            storageBucket: "data-transfer-2dd69.firebasestorage.app",
-            messagingSenderId: "899207383389",
-            appId: "1:899207383389:web:f5564fda60007ace3540b4"
-        };
-
-        async function initFirebase() {
-            try {
-                // ប្រើ Config របស់ប្រព័ន្ធ Canvas ប្រសិនបើមាន បើអត់ប្រើ Config ខាងលើសម្រាប់ GitHub
-                const firebaseConfig = (typeof __firebase_config !== 'undefined' && __firebase_config) ? JSON.parse(__firebase_config) : githubFirebaseConfig;
-                
-                if (!firebaseConfig || firebaseConfig.apiKey === "ជំនួស_API_KEY_នៅទីនេះ") { 
-                    firebaseInitError = "សូមបញ្ចូល Firebase Config ឲ្យបានត្រឹមត្រូវជាមុនសិន។";
-                    return; 
-                }
-                
-                appId = typeof __app_id !== 'undefined' ? __app_id : 'github-vymk-app';
-                const app = initializeApp(firebaseConfig);
-                auth = getAuth(app);
-                db = getFirestore(app);
-
-                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
-                    await signInWithCustomToken(auth, __initial_auth_token);
-                } else {
-                    await signInAnonymously(auth);
-                }
-
-                onAuthStateChanged(auth, (user) => { currentUser = user; });
-            } catch (e) {
-                console.error("Firebase init error:", e);
-                firebaseInitError = e.message;
-            }
-        }
-        initFirebase();
-
-        window.generateAndSend = async function() {
-            if (firebaseInitError) {
-                return alert("❌ បរាជ័យក្នុងការភ្ជាប់ទៅ Firebase ៖\n" + firebaseInitError + "\n\n👉 សូមពិនិត្យមើល៖\n១. តើបានបើក Anonymous ក្នុង Authentication ទេ?\n២. តើបាន Add Domain (bondammorodok.blogspot.com) ចូលក្នុង Authorized domains ទេ?");
-            }
-            if (!currentUser) return alert("ប្រព័ន្ធកំពុងភ្ជាប់ទៅកាន់ Cloud... សូមរង់ចាំបន្តិច!");
-            
-            const sName = document.getElementById('transferSenderName').value;
-            if(!sName.trim()) return alert("សូមបំពេញឈ្មោះរបស់អ្នកសិន!");
-            
-            const btn = event.target;
-            btn.innerText = "កំពុងបង្កើត..."; btn.disabled = true;
-
-            // Generate 6 digit code
-            const code = Math.floor(100000 + Math.random() * 900000).toString();
-            const data = window.getFormData();
-            
-            try {
-                // Save to Cloud Relay
-                await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'transfers', code), {
-                    senderName: sName,
-                    formData: JSON.stringify(data),
-                    timestamp: new Date().getTime()
-                });
-                
-                document.getElementById('theCode').innerText = code;
-                document.getElementById('transferCodeDisplay').style.display = 'block';
-                btn.innerText = "បង្កើតកូដផ្ញើទិន្នន័យ"; btn.disabled = false;
-            } catch (e) {
-                alert("មានបញ្ហាក្នុងការផ្ទេរ: " + e.message);
-                btn.innerText = "បង្កើតកូដផ្ញើទិន្នន័យ"; btn.disabled = false;
-            }
-        }
-
-        window.checkReceiveCode = async function() {
-            if (firebaseInitError) {
-                return alert("❌ បរាជ័យក្នុងការភ្ជាប់ទៅ Firebase ៖\n" + firebaseInitError + "\n\n👉 សូមពិនិត្យមើល៖\n១. តើបានបើក Anonymous ក្នុង Authentication ទេ?\n២. តើបាន Add Domain (bondammorodok.blogspot.com) ចូលក្នុង Authorized domains ទេ?");
-            }
-            if (!currentUser) return alert("ប្រព័ន្ធកំពុងភ្ជាប់ទៅកាន់ Cloud... សូមរង់ចាំបន្តិច!");
-            
-            const code = document.getElementById('receiveCodeInput').value;
-            if(code.length !== 6) return alert("សូមបញ្ចូលលេខកូដសម្ងាត់ ៦ខ្ទង់ឲ្យបានត្រឹមត្រូវ!");
-            
-            const btn = event.target;
-            btn.innerText = "កំពុងស្វែងរក..."; btn.disabled = true;
-
-            try {
-                const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'transfers', code);
-                const docSnap = await getDoc(docRef);
-                
-                if(docSnap.exists()) {
-                    window.pendingTransfer = { docRef, data: docSnap.data(), code: code };
-                    document.getElementById('senderNameDisplay').innerText = window.pendingTransfer.data.senderName;
-                    document.getElementById('receiveConfirmSection').style.display = 'block';
-                } else {
-                    alert("លេខកូដមិនត្រឹមត្រូវ ឬអស់សុពលភាព (អាចត្រូវបានគេទាញយករួចហើយ)!");
-                }
-            } catch(e) {
-                alert("បញ្ហាប្រព័ន្ធ: " + e.message);
-            }
-            btn.innerText = "ស្វែងរកទិន្នន័យ"; btn.disabled = false;
-        }
-
-        window.acceptTransfer = async function() {
-            if(!window.pendingTransfer) return;
-            const payload = window.pendingTransfer.data;
-            const parsedData = JSON.parse(payload.formData);
-            
-            // មុននឹងយកទិន្នន័យគេមកដាក់ បើកំពុងនៅទំព័រខ្លួនឯង ត្រូវ Save ទិន្នន័យខ្លួនឯងទុកសិន
-            if (!window.currentlyViewingRecordId) {
-                window.savePersonalDataSilently();
-            }
-            
-            // 👉 បន្ថែមឈ្មោះ និង "ទិន្នន័យទាំងមូល" ចូលបញ្ជី Menu ≡ ជាមុនសិន
-            let list = JSON.parse(localStorage.getItem('receivedList') || '[]');
-            const uniqueId = 'rec_' + new Date().getTime(); // បង្កើត ID សម្គាល់
-            list.push({
-                id: uniqueId,
-                name: payload.senderName, 
-                date: new Date().toLocaleString('en-GB'),
-                data: parsedData 
-            });
-            localStorage.setItem('receivedList', JSON.stringify(list));
-            
-            // ប្តូររបៀបទៅជាមើលឯកសារដែលទើបតែទទួលបាននេះភ្លាមៗ
-            window.currentlyViewingRecordId = uniqueId;
-            Object.keys(parsedData).forEach(key => {
-                const el = document.getElementById(key);
-                if(el && !el.classList.contains('modal-input')) {
-                    el.value = parsedData[key] || '';
-                    if(el.classList.contains('auto-width-input')) window.adjustWidth(el);
-                }
-            });
-
-            window.renderSidebarList();
-            
-            // លុបទិន្នន័យចេញពី Cloud
-            await deleteDoc(window.pendingTransfer.docRef);
-            
-            window.closeModals();
-            alert("ទាញយកទិន្នន័យទទួលបានជោគជ័យ! លោកអ្នកអាចកែ ឬ Print បាន។\nសូមបើកបញ្ជី (≡) ដើម្បីត្រឡប់ទៅទិន្នន័យខ្លួនឯង។");
-        }
-
-        window.rejectTransfer = function() {
-            window.pendingTransfer = null;
-            document.getElementById('receiveConfirmSection').style.display = 'none';
-            document.getElementById('receiveCodeInput').value = '';
-            window.closeModals();
-        }
+        // ដំណើរការពេលបើក និងពេលបង្វិលអេក្រង់
+        window.addEventListener('load', scalePage);
+        window.addEventListener('resize', scalePage);
     </script>
 
 </body>
