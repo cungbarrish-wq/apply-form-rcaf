@@ -11,11 +11,11 @@
   
     <style>
         body {
-            font-family: 'Khmer OS System', 'Battambang', sans-serif;
+            font-family: 'Khmer OS Siemreap', 'Battambang', sans-serif;
             background-color: #f4f4f4;
             color: #000;
-            line-height: 1.53; 
-            font-size: 14px;
+            line-height: 1.38; 
+            font-size: 16px;
             padding-top: 1.0cm;
         }
         /* Page Container */
@@ -44,31 +44,40 @@
             line-height: 1.5;
         }
         .photo-box {
-            position: absolute; top: 22mm; right: 20mm; width: 23mm; height: 28mm;
+            position: absolute; top: 20mm; right: 20mm; width: 23mm; height: 28mm;
             border: 1px solid #1f20229e; display: flex; align-items: center;
             justify-content: center; text-align: center; color: #888888;
         }
-        .form-title { text-align: center; margin-top: 20px; margin-bottom: 20px; line-height: 1.8; }
+        .form-title { text-align: center; margin-top: -18px; margin-bottom: -9px; line-height: 1.8; }
         .input-group {
-            display: flex; align-items: baseline; flex-wrap: wrap; margin-bottom: -9.5px;
+            display: flex; align-items: baseline; flex-wrap: wrap; margin-bottom: -11.5px; margin-top:-13px;
         }
         .input-dotted {
             border: none; background-image: linear-gradient(to right, #000 50%, transparent 50%);
             background-size: 5px 1px; background-position: bottom 12px left 0; background-repeat: repeat-x;
-            background-color: transparent; font-family: inherit; font-size: 14px; color: #132bb0;
+            background-color: transparent; font-family: inherit; font-size: 16px; color: #020b3d;
             padding: 4px 5px 6px 5px; line-height: normal; outline: none; flex-grow: 1; text-align: center;
             -webkit-print-color-adjust: exact; print-color-adjust: exact;
         }
         .w-auto { flex-grow: 1; }
+      .w-id { width: 150px; flex-grow: 0; }
         .w-small { width: 100px; flex-grow: 0; }
+      	.w-staff { width: 208px; flex-grow: 0; }
         .w-medium { width: 110px; flex-grow: 0; }
-        .w-home { width: 60px; flex-grow: 0; }
-      	.w-way { width: 80px; flex-grow: 0; }
-      	.w-town { width: 90px; flex-grow: 0; }
+        .w-home { width: 47px; flex-grow: 0; }
+      	.w-way { width: 40px; flex-grow: 0; }
+      	.w-khan2 { width: 125px; flex-grow: 0; }
+      	.w-town { width: 88px; flex-grow: 0; }
       	.w-name { width: 180px; flex-grow: 0; }
       	.w-sex { width: 40px; flex-grow: 0; }
-		.w-db { width: 160px; flex-grow: 0; }
-      	.w-db2 { width: 150px; flex-grow: 0; }
+		.w-db { width: 150px; flex-grow: 0; }
+      	.w-db2 { width: 128px; flex-grow: 0; }
+      	.w-phone1 { width: 175px; flex-grow: 0; }
+      	.w-pr1 { width: 196px; flex-grow: 0; }
+      	.w-commune2 { width: 140px; flex-grow: 0; }
+      	.w-district2 { width: 212px; flex-grow: 0; }
+      	.w-family2 { width: 165px; flex-grow: 0; }
+      
         .salutation { text-align: center; margin-top: 15px; margin-bottom: 15px; line-height: 1.6; }
         .attachments { margin-top: 10px; padding-left: 20px; }
         .attachment-row { display: flex; align-items: baseline; margin-bottom: 0px; }
@@ -80,7 +89,7 @@
         .auto-width-input {
             border: none; background-image: linear-gradient(to right, #131314eb 50%, transparent 50%);
             background-size: 5px 1px; background-position: bottom 12px left 0; background-repeat: repeat-x;
-            background-color: transparent; font-family: inherit; font-size: 14px; color: #0d1798;
+            background-color: transparent; font-family: inherit; font-size: 16px; color: #020b3d;
             padding: 4px 2px 6px 2px; line-height: normal; outline: none; text-align: center;
             -webkit-print-color-adjust: exact; print-color-adjust: exact;
         }
@@ -219,9 +228,9 @@
 
     <div class="page">
         <div class="header-section moul-font">
-            <span style="font-size: 16px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
-            <span style="font-size: 14px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
-            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEizcxq3b-xmvlpSr24nEHaiRSPcJ1xoba2QqqIUc-Imqb3B2AurC7Z1NCKOUFncDClGyZ3uaZyA5hGWst3HpivzVCs2vcTsjAYR5M7zV3ht-AI0tq__RADXBXikVnmwrfpZJd_M9GBC_u1zyclVrJPqehcPBW_9eNuX_SztVJH3a3i6gGKMRa_ob-qe9zI=s16000" alt="kbach" style="height: 25px; margin-top: 0px;">
+            <span style="font-size: 19px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
+            <span style="font-size: 16.5px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjGw-0lKQC-_xEA3zDKZ2LfwRNqZb4lwZXHTlBbYj_-VzE7UYohDSufSYCNbGrE0gRg_lfVVxPGju2vlD0n1ZHlGaAS4XzEK6ZK9IXaou9RGD7D4ojoF5XR-loHFAZqaXhJqeWI1YNtuTNVjSL5TjaXjOBpshuoS7QEb0VtiH9qSy1o6Xn2b8JTlqlpQc4" alt="kbach" style="height: 20px; margin-top: 0px;">
         </div>
 
         <div class="photo-box">រូបថត<br>៤x៦</div>
@@ -230,7 +239,7 @@
             ពាក្យសុំចូល<br>
             សមាជិកភាព វិភាគទានយោធិនមរណភាព<br>
             ក្រសួងការពារជាតិ (វ.យ.ម.ក)<br>
-            <div style="margin-top: 10px; text-align: center;">
+            <div style="margin-top: -3px; text-align: center;">
                 <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhx0qlRIHbeM5w4r_CzC6xYGwYGnoO-zCBpvlCAa3-zyTtWVaMQQwqatE-2JW6RQuZK0sb0lqnC1S4P_n54XI8UKoXnaYnyJLyBeZHKpuLsVUXQc-kIK2feCyGQqHaZMblR-dm9PG0GDLYxI1UoA_URX9MDYzigdbGmO24kz-s9W7TaKZxjiB8DxbbZpiY" alt="kbach-divider" style="height: 12px; width: auto;">
             </div>
         </div>
@@ -244,14 +253,14 @@
         <div class="input-group">
             អត្តលេខ <input type="text" id="idNum" class="input-dotted w-small">
             ឋានន្តរសក្តិ <input type="text" id="rank" class="input-dotted w-small">
-            មុខតំណែង <input type="text" id="position" class="input-dotted w-auto">
+            មុខតំណែង <input type="text" id="position" class="input-dotted w-staff">
         </div>
         <div class="input-group">
             កងឯកភាព <input type="text" id="unit" class="input-dotted w-auto">
         </div>
         <div class="input-group">
-            ទីកន្លែងកំណើតៈ ស្រុក/ខណ្ឌ <input type="text" id="pob_district" class="input-dotted w-auto">
-            ខេត្ត/ក្រុង <input type="text" id="pob_province" class="input-dotted w-auto">
+            ទីកន្លែងកំណើតៈ ស្រុក/ខណ្ឌ <input type="text" id="pob_district" class="input-dotted w-name">
+            ខេត្ត/ក្រុង <input type="text" id="pob_province" class="input-dotted w-pr1">
         </div>
         <div class="input-group">
             អាស័យដ្ឋានបច្ចុប្បន្នៈ ផ្ទះលេខ <input type="text" id="curr_house" class="input-dotted w-home">
@@ -262,28 +271,30 @@
             
             ឃុំ/សង្កាត់ <input type="text" id="curr_commune" class="input-dotted w-small">
             ស្រុក/ខណ្ឌ <input type="text" id="cp2_ass_district" class="input-dotted w-medium">
-          	ខេត្ត/ក្រុង <input type="text" id="curr_province" class="input-dotted w-auto">
+          	ខេត្ត/ក្រុង <input type="text" id="curr_province" class="input-dotted w-pr1">
         </div>
         <div class="input-group">
             លេខអត្តសញ្ញាណប័ណ្ណ ខភម <input type="text" id="military_id" class="input-dotted w-name">
-            លេខទូរស័ព្ទ <input type="text" id="phone" class="input-dotted w-auto">
+            លេខទូរស័ព្ទ <input type="text" id="phone" class="input-dotted w-phone1">
         </div>
 
-        <div class="salutation moul-font">
+        <div class="salutation moul-font"; style="font-size: 16px;">
             សូមគោរពជូន<br>
             ឯកឧត្តម នាយឧត្តមសេនីយ៍ អគ្គនាយក អគ្គនាយកដ្ឋានយោធសេវា<br>
             និងជា ប្រធានគណៈកម្មការវិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ
         </div>
 
-        <div style="text-indent: 50px; text-align: justify;">
-            មេត្តាអនុញ្ញាតចុះឈ្មោះខ្ញុំបាទ/នាងខ្ញុំ <input type="text" id="repeat_name" class="input-dotted" style="width: 200px;"> ចូលជាសមាជិកភាព
-            វិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ ដោយក្តីអនុគ្រោះ។
+        <div style="text-indent: 97px; text-align: justify;">
+            មេត្តាអនុញ្ញាតចុះឈ្មោះខ្ញុំបាទ/នាងខ្ញុំ ចូលជាសមាជិកភាព វិភាគទានយោធិនមរណភាព <br>
+          <p style="text-indent: 50px; text-align: justify; margin-top:5px;">ក្រសួងការពារជាតិ ដោយក្តីអនុគ្រោះ។</p>
         </div>
 
         <div class="B" style="margin-top: 20px; text-decoration: underline; text-align: center;"><B>សូមភ្ជាប់មកជាមួយនូវ ៖</B></div>
         
-        <div class="attachments">
-            <div class="attachment-row"><span>១- អត្តសញ្ញាណប័ណ្ណ ខភម និងអត្តសញ្ញាណប័ណ្ណសញ្ជាតិខ្មែរ</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
+        <div class="attachments";>
+         
+          
+            <div class="attachment-row";><span>១- អត្តសញ្ញាណប័ណ្ណ ខភម និងអត្តសញ្ញាណប័ណ្ណសញ្ជាតិខ្មែរ</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
             <div class="attachment-row"><span>២- សៀវភៅគ្រួសារ ឬ សៀវភៅស្នាក់នៅ</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
             <div class="attachment-row"><span>៣- រូបថត ខភម ( ៤ x ៦ )</span><span class="dot-leader"></span><span>០៨សន្លឹក</span></div>
             <div class="attachment-row"><span>៤- លិខិតបណ្តាំ វ.យ.ម.ក</span><span class="dot-leader"></span><span>០៣ច្បាប់</span></div>
@@ -312,27 +323,27 @@
 
     <div class="page">
         <div class="header-section moul-font">
-            <span style="font-size: 16px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
-            <span style="font-size: 14px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
-            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEizcxq3b-xmvlpSr24nEHaiRSPcJ1xoba2QqqIUc-Imqb3B2AurC7Z1NCKOUFncDClGyZ3uaZyA5hGWst3HpivzVCs2vcTsjAYR5M7zV3ht-AI0tq__RADXBXikVnmwrfpZJd_M9GBC_u1zyclVrJPqehcPBW_9eNuX_SztVJH3a3i6gGKMRa_ob-qe9zI=s16000" alt="kbach" style="height: 25px; margin-top: 0px;">
+            <span style="font-size: 19px;">ព្រះរាជាណាចក្រកម្ពុជា</span><br>
+            <span style="font-size: 16.5px;">ជាតិ សាសនា ព្រះមហាក្សត្រ</span><br>
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjGw-0lKQC-_xEA3zDKZ2LfwRNqZb4lwZXHTlBbYj_-VzE7UYohDSufSYCNbGrE0gRg_lfVVxPGju2vlD0n1ZHlGaAS4XzEK6ZK9IXaou9RGD7D4ojoF5XR-loHFAZqaXhJqeWI1YNtuTNVjSL5TjaXjOBpshuoS7QEb0VtiH9qSy1o6Xn2b8JTlqlpQc4" alt="kbach" style="height: 25px; margin-top: 0px;">
         </div>
 
         <div class="photo-box">រូបថត<br>៤x៦</div>
 
-        <div class="form-title moul-font">
+        <div class="form-title moul-font" style="font-size: 20.5px;">
             លិខិតបណ្តាំ<br>
             វ.យ.ម.ក<br>
-            <div style="margin-top: 10px; text-align: center;">
+            <div style="margin-top: -10px; text-align: center;">
                 <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhx0qlRIHbeM5w4r_CzC6xYGwYGnoO-zCBpvlCAa3-zyTtWVaMQQwqatE-2JW6RQuZK0sb0lqnC1S4P_n54XI8UKoXnaYnyJLyBeZHKpuLsVUXQc-kIK2feCyGQqHaZMblR-dm9PG0GDLYxI1UoA_URX9MDYzigdbGmO24kz-s9W7TaKZxjiB8DxbbZpiY" alt="kbach-divider" style="height: 12px; width: auto;">
             </div>
         </div>
 
         <div style="margin-bottom: 15px; text-align: justify;">
             <div style="display: flex;">
-                <div class="moul-font" style= "width: 45px; ">យោង៖</div>
+                <div class="moul-font" style= "width: 53px; ">យោង</div>
                 <div style="flex-grow: 1;">
-                       - សេចក្តីកំណត់លេខ ០០៣/២០២៥ ស.ក.ណ ចុះថ្ងៃទី២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីវិភាគទាន យោធិនមរណភាពក្រសួងការពារជាតិ។<br>
-                    - សេចក្តីសម្រេចលេខ ០៦៦ សសរ.កពជ ចុះថ្ងៃទី ២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីការបង្កើតគណៈកម្មការវិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ
+                       - សេចក្តីកំណត់លេខ ០០៣/២០២៥ ស.ក.ណ ចុះថ្ងៃទី២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីវិភាគទាន<br> &nbsp;&nbsp;យោធិនមរណភាពក្រសួងការពារជាតិ។<br>
+                    - សេចក្តីសម្រេចលេខ ០៦៦ សសរ.កពជ ចុះថ្ងៃទី២៦ខែកញ្ញាឆ្នាំ២០២៥ ស្តីពីការបង្កើតគណៈ <br>&nbsp;&nbsp;កម្មការវិភាគទានយោធិនមរណភាព ក្រសួងការពារជាតិ
                 </div>
             </div>
         </div>
@@ -353,13 +364,13 @@
         <div class="B" style="text-align: center; margin: 10px 0 10px 0;"><B>សូមប្រគល់សិទ្ធិក្នុងការទទួលអត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាព</B></div>
 
         <div class="input-group">
-         <span class="input-dotted" style="width: 30px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+         <span class="input-dotted" style="width: 50px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
             ជូនទៅឈ្មោះ <input type="text" id="p2_ass_name" class="input-dotted w-name">
             ភេទ <input type="text" id="p2_ass_gender" class="input-dotted w-sex">
             ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_ass_dob" class="input-dotted w-db2">
         </div>
         <div class="input-group">
-            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_ass_id" class="input-dotted w-medium">
+            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_ass_id" class="input-dotted w-id">
             អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_ass_house" class="input-dotted w-home">
             ផ្លូវ <input type="text" id="p2_ass_st" class="input-dotted w-way">
             
@@ -367,67 +378,79 @@
         <div class="input-group">
           	
             ភូមិ <input type="text" id="p2_ass_village" class="input-dotted w-small">
-            ឃុំ/សង្កាត់ <input type="text" id="p2_ass_commune" class="input-dotted w-small">
-            ស្រុក/ខណ្ឌ <input type="text" id="p2_ass_district" class="input-dotted w-small">
-            ខេត្ត/ក្រុង <input type="text" id="p2_ass_prov" class="input-dotted w-town">
+            ឃុំ/សង្កាត់ <input type="text" id="p2_ass_commune" class="input-dotted w-commune2">
+            ស្រុក/ខណ្ឌ <input type="text" id="p2_ass_district" class="input-dotted w-district2">
+            
         </div>
         <div class="input-group">
+          	ខេត្ត/ក្រុង <input type="text" id="p2_ass_prov" class="input-dotted w-town">
             លេខទូរស័ព្ទ <input type="text" id="p2_ass_phone" class="input-dotted w-name">
-            ត្រូវជា <input type="text" id="p2_ass_rel" class="input-dotted w-small">
+            ត្រូវជា <input type="text" id="p2_ass_rel" class="input-dotted w-family2">
         </div>
         <div style="text-align: justify; margin-top:2px;">
             ជាអ្នក<B>ទទួលសិទ្ធិបើកប្រាក់អត្ថប្រយោជន៍វិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ</B><br> ដោយអនុលោមតាមសេចក្តីកំណត់ចុងក្រោយស្តីពីវិភាគទានយោធិនមរណភាពក្រសួងការពារជាតិ។
         </div>
 
-        <div class="input-group" style="margin-top: -3px;">
+        <div class="input-group" style="margin-top: -6px;"> 
+          <span class="input-dotted" style="width: 100px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
             ក្នុងករណីឈ្មោះ <input type="text" id="p2_missing_name" class="input-dotted w-name"> អវត្តមាន សូមផ្តល់សិទ្ធិជូនទៅ៖
         </div>
-        <div class="input-group">
+        <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 50px; flex-grow: 0; padding: 4px 0 6px 0; "></span>
             - ឈ្មោះ <input type="text" id="p2_sub1_name" class="input-dotted w-name">
             ភេទ <input type="text" id="p2_sub1_gender" class="input-dotted w-sex">
             ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub1_dob" class="input-dotted w-db">
         </div>
-        <div class="input-group">
-            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub1_id" class="input-dotted w-medium">
+        <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 60px; flex-grow: 0; padding: 4px 0 6px 0; "></span>
+            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub1_id" class="input-dotted w-id">
             អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_sub1_house" class="input-dotted w-home">
-            ផ្លូវ <input type="text" id="p2_sub1_st" class="input-dotted w-way">
+          
             
         </div>
-        <div class="input-group">
+       <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 60px; flex-grow: 0; padding: 4px 0 6px 0; "></span>
+            ផ្លូវ <input type="text" id="p2_sub1_st" class="input-dotted w-way">
            	ភូមិ <input type="text" id="p2_sub1_village" class="input-dotted w-small">
             ឃុំ/សង្កាត់ <input type="text" id="p2_sub1_commune" class="input-dotted w-small">
-            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub1_district" class="input-dotted w-small">
-            ខេត្ត/ក្រុង <input type="text" id="p2_sub1_prov" class="input-dotted w-town">
-        </div>
-        <div class="input-group">
+            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub1_district" class="input-dotted w-khan2">
+      </div>
+          <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 60px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            ខេត្ត/ក្រុង <input type="text" id="p2_sub1_prov" class="input-dotted w-town">            
             លេខទូរស័ព្ទ <input type="text" id="p2_sub1_phone" class="input-dotted w-name">
             ត្រូវជា <input type="text" id="p2_sub1_rel" class="input-dotted w-small">
         </div>
 
-        <div class="input-group">
+          <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 50px; flex-grow: 0; padding: 4px 0 6px 0; "></span>
             - ឬឈ្មោះ <input type="text" id="p2_sub2_name" class="input-dotted w-name">
             ភេទ <input type="text" id="p2_sub2_gender" class="input-dotted w-sex">
             ថ្ងៃខែឆ្នាំកំណើត <input type="text" id="p2_sub2_dob" class="input-dotted w-db">
         </div>
-        <div class="input-group">
-            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub2_id" class="input-dotted w-medium">
-            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_sub2_house" class="input-dotted w-home">
-            ផ្លូវ <input type="text" id="p2_sub2_st" class="input-dotted w-way">
-            
+       <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 60px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+            កាន់អត្តសញ្ញាណប័ណ្ណលេខ <input type="text" id="p2_sub2_id" class="input-dotted w-id">
+            អាស័យដ្ឋានបច្ចុប្បន្នផ្ទះលេខ <input type="text" id="p2_sub2_house" class="input-dotted w-home">          
         </div>
-        <div class="input-group">
+      
+       <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 60px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+          	 ផ្លូវ <input type="text" id="p2_sub2_st" class="input-dotted w-way">
             ភូមិ <input type="text" id="p2_sub2_village" class="input-dotted w-small">
             ឃុំ/សង្កាត់ <input type="text" id="p2_sub2_commune" class="input-dotted w-small">
-            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub2_district" class="input-dotted w-small">
-            ខេត្ត/ក្រុង <input type="text" id="p2_sub2_prov" class="input-dotted w-town">
+            ស្រុក/ខណ្ឌ <input type="text" id="p2_sub2_district" class="input-dotted w-khan2">
+            
         </div>
-        <div class="input-group">
+        <div class="input-group" style="margin-top: -15.5px;">
+          <span class="input-dotted" style="width: 60px; flex-grow: 0; padding: 4px 0 6px 0;"></span>
+          ខេត្ត/ក្រុង <input type="text" id="p2_sub2_prov" class="input-dotted w-town">
             លេខទូរស័ព្ទ <input type="text" id="p2_sub2_phone" class="input-dotted w-name">
             ត្រូវជា <input type="text" id="p2_sub2_rel" class="input-dotted w-small">
         </div>
 
-        <div style="text-align: justify; margin-top: 5px;"><div style="text-indent: 50px; text-align: justify;">
-            លិខិតបណ្តាំនេះធ្វើឡើងដោយឆន្ទៈពិតប្រាកដដោយមិនមានការបង្ខិតបង្ខំធ្វើឡើងចំនួន០៣ច្បាប់<br>មានតម្លៃគតិយុត្តិស្មើៗគ្នា០១ច្បាប់តម្កល់នៅលេខាធិការដ្ឋាន(វ.យ.ម.ក)និង០១ច្បាប់<br>តម្កល់នៅក្រុមការងារសាមីអង្គភាពរៀងៗខ្លួន និង០១ច្បាប់ទៀត ផ្តល់ជូនសាមីខ្លួន។
+        <div style="text-align: justify; margin-top: 5px;"><div style="text-indent: 43px; text-align: justify;">
+            លិខិតបណ្តាំនេះធ្វើឡើងដោយឆន្ទៈពិតប្រាកដដោយមិនមានការបង្ខិតបង្ខំធ្វើឡើងចំនួន០៣ច្បាប់<br>មានតម្លៃគតិយុត្តិស្មើៗគ្នា ០១ច្បាប់តម្កល់នៅលេខាធិការដ្ឋាន(វ.យ.ម.ក) និង០១ច្បាប់ តម្កល់នៅ<br>ក្រុមការងារសាមីអង្គភាពរៀងៗខ្លួន និង០១ច្បាប់ទៀត ផ្តល់ជូនសាមីខ្លួន។
         </div>
 
         <div style="display: flex; justify-content: space-between; margin-top: 10px; text-align: center;">
